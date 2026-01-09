@@ -23,8 +23,8 @@ wheels/
 # Virtual environments
 venv/
 ENV/
-env/
 .venv/
+# Note: don't ignore env/ as it conflicts with src/rl/env/
 
 # IDE
 .idea/
