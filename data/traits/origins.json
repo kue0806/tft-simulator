@@ -1,0 +1,193 @@
+{
+  "set": 16,
+  "origins": [
+    {
+      "id": "bilgewater",
+      "name": "Bilgewater",
+      "type": "origin",
+      "description": "Earn Silver Serpents each round. Spend them in the Black Market for champions, stats, and loot.",
+      "mechanic": "Silver Serpents",
+      "breakpoints": [
+        {"count": 3, "effect": "Earn 18 Serpents per round", "stats": {"serpents_per_round": 18}},
+        {"count": 5, "effect": "Earn 30 Serpents per round, improved loot", "stats": {"serpents_per_round": 30}},
+        {"count": 7, "effect": "Earn 55 Serpents per round, superior loot", "stats": {"serpents_per_round": 55}},
+        {"count": 10, "effect": "Earn 150 Serpents per round, 2x stats, special cannons", "stats": {"serpents_per_round": 150}}
+      ],
+      "champions": ["illaoi", "twisted_fate", "gangplank", "nautilus", "miss_fortune", "tahm_kench", "graves", "fizz"]
+    },
+    {
+      "id": "demacia",
+      "name": "Demacia",
+      "type": "origin",
+      "description": "When your team takes damage, Demacians rally and gain bonus Armor and Magic Resist.",
+      "mechanic": "Rally",
+      "breakpoints": [
+        {"count": 3, "effect": "+12 Armor & Magic Resist", "stats": {"armor": 12, "mr": 12}},
+        {"count": 5, "effect": "+25 Armor & Magic Resist", "stats": {"armor": 25, "mr": 25}},
+        {"count": 7, "effect": "+40 Armor & Magic Resist, smite enemies", "stats": {"armor": 40, "mr": 40}},
+        {"count": 11, "effect": "+150 Armor & Magic Resist", "stats": {"armor": 150, "mr": 150}}
+      ],
+      "champions": ["jarvan_iv", "sona", "xin_zhao", "vayne", "garen", "lux", "lucian_senna", "shyvana", "poppy", "galio"]
+    },
+    {
+      "id": "freljord",
+      "name": "Freljord",
+      "type": "origin",
+      "description": "Freljordians summon ice towers that slow and damage enemies.",
+      "mechanic": "Ice Tower",
+      "breakpoints": [
+        {"count": 3, "effect": "1 tower, +8% max health, 10% damage amp", "stats": {"health_percent": 8, "damage_amp": 10}},
+        {"count": 5, "effect": "2 towers, +12% max health, 16% damage amp", "stats": {"health_percent": 12, "damage_amp": 16}},
+        {"count": 7, "effect": "Towers stun on death, increased bonuses", "stats": {"health_percent": 18, "damage_amp": 24}}
+      ],
+      "champions": ["anivia", "ashe", "tryndamere", "sejuani", "braum", "lissandra", "ornn", "volibear"]
+    },
+    {
+      "id": "ionia",
+      "name": "Ionia",
+      "type": "origin",
+      "description": "Choose from five different paths each game, each granting unique bonuses.",
+      "mechanic": "Paths",
+      "breakpoints": [
+        {"count": 3, "effect": "Choose from 2 paths", "stats": {}},
+        {"count": 5, "effect": "Choose from 3 paths, enhanced effects", "stats": {}},
+        {"count": 7, "effect": "Choose from 4 paths, enhanced effects", "stats": {}},
+        {"count": 10, "effect": "All 5 paths active", "stats": {}}
+      ],
+      "champions": ["jhin", "shen", "xin_zhao", "yasuo", "ahri", "zoe", "wukong", "yone", "yunara", "sett", "kennen"]
+    },
+    {
+      "id": "ixtal",
+      "name": "Ixtal",
+      "type": "origin",
+      "description": "Complete quests to earn Sunshards. Spend Sunshards for powerful rewards.",
+      "mechanic": "Sunshards",
+      "breakpoints": [
+        {"count": 3, "effect": "Quest completion grants Sunshards", "stats": {}},
+        {"count": 5, "effect": "Heal 2 player HP per combat", "stats": {"player_heal": 2}},
+        {"count": 7, "effect": "Bonus gold and loot", "stats": {}}
+      ],
+      "champions": ["qiyana", "neeko", "loris", "milio", "yunara", "nidalee", "skarner", "brock"]
+    },
+    {
+      "id": "noxus",
+      "name": "Noxus",
+      "type": "origin",
+      "description": "Summon Atakhan who grows stronger based on Noxus units and star levels.",
+      "mechanic": "Atakhan",
+      "breakpoints": [
+        {"count": 3, "effect": "Summon Atakhan (weak)", "stats": {}},
+        {"count": 5, "effect": "Atakhan grows stronger", "stats": {}},
+        {"count": 7, "effect": "Atakhan becomes very powerful", "stats": {}},
+        {"count": 10, "effect": "Atakhan reaches maximum power", "stats": {}}
+      ],
+      "champions": ["briar", "sion", "draven", "ambessa", "swain", "annie", "mel", "darius", "leblanc"]
+    },
+    {
+      "id": "piltover",
+      "name": "Piltover",
+      "type": "origin",
+      "description": "Build an Invention with modular upgrades throughout the game.",
+      "mechanic": "Invention",
+      "breakpoints": [
+        {"count": 2, "effect": "Start building Invention", "stats": {}},
+        {"count": 4, "effect": "Invention gains upgrades", "stats": {}},
+        {"count": 6, "effect": "Invention reaches maximum power", "stats": {}}
+      ],
+      "champions": ["caitlyn", "rumble", "vi", "seraphine", "orianna", "t_hex"]
+    },
+    {
+      "id": "shadow_isles",
+      "name": "Shadow Isles",
+      "type": "origin",
+      "description": "Collect souls when champions die. Souls grant increasing bonuses.",
+      "mechanic": "Soul Collection",
+      "breakpoints": [
+        {"count": 2, "effect": "Collect souls, 1x multiplier", "stats": {}},
+        {"count": 3, "effect": "1.5x soul collection", "stats": {}},
+        {"count": 4, "effect": "2x soul collection", "stats": {}},
+        {"count": 5, "effect": "3x soul collection, bonus stats", "stats": {}}
+      ],
+      "champions": ["viego", "gwen", "leona", "fiddlesticks", "kindred", "yorick", "kalista", "thresh"]
+    },
+    {
+      "id": "shurima",
+      "name": "Shurima",
+      "type": "origin",
+      "description": "Gain attack speed and healing. At 4 Shurima, champions periodically Ascend.",
+      "mechanic": "Ascension",
+      "breakpoints": [
+        {"count": 2, "effect": "+20% max health", "stats": {"health_percent": 20}},
+        {"count": 3, "effect": "+50 Armor & Magic Resist", "stats": {"armor": 50, "mr": 50}},
+        {"count": 4, "effect": "Champions Ascend to GODHOOD", "stats": {}}
+      ],
+      "champions": ["nasus", "renekton", "azir", "xerath"]
+    },
+    {
+      "id": "targon",
+      "name": "Targon",
+      "type": "origin",
+      "description": "Targon champions are naturally stronger than average units.",
+      "mechanic": "Strength",
+      "breakpoints": [
+        {"count": 1, "effect": "Targon units have enhanced base stats", "stats": {}}
+      ],
+      "champions": ["aphelios", "leona", "taric", "zilean", "diana", "aurelion_sol"]
+    },
+    {
+      "id": "void",
+      "name": "Void",
+      "type": "origin",
+      "description": "Gain mutations that enhance Void champions. Gain attack speed.",
+      "mechanic": "Mutations",
+      "breakpoints": [
+        {"count": 2, "effect": "1 mutation, +8% attack speed", "stats": {"attack_speed": 8}},
+        {"count": 4, "effect": "2 mutations, +18% attack speed", "stats": {"attack_speed": 18}},
+        {"count": 6, "effect": "3 mutations, +28% attack speed", "stats": {"attack_speed": 28}},
+        {"count": 9, "effect": "Supercharged mutations, +35% attack speed", "stats": {"attack_speed": 35}}
+      ],
+      "champions": ["kogmaw", "chogath", "reksai", "malzahar", "belveth", "kaisa", "rift_herald", "baron_nashor"]
+    },
+    {
+      "id": "yordle",
+      "name": "Yordle",
+      "type": "origin",
+      "description": "Gain health and attack speed per Yordle. Higher breakpoints grant shop benefits.",
+      "mechanic": "Scaling",
+      "breakpoints": [
+        {"count": 2, "effect": "Health and attack speed per Yordle", "stats": {}},
+        {"count": 4, "effect": "Guaranteed Yordle in shop", "stats": {}},
+        {"count": 6, "effect": "Free rerolls", "stats": {}},
+        {"count": 8, "effect": "Weekly grab bag", "stats": {}},
+        {"count": 10, "effect": "Mystery reward", "stats": {}}
+      ],
+      "champions": ["lulu", "rumble", "teemo", "tristana", "kennen", "kobuko_yuumi", "veigar", "fizz", "poppy"]
+    },
+    {
+      "id": "zaun",
+      "name": "Zaun",
+      "type": "origin",
+      "description": "Zaunites periodically become Shimmer-Fused, gaining durability and attack speed.",
+      "mechanic": "Shimmer-Fused",
+      "breakpoints": [
+        {"count": 3, "effect": "Shimmer-Fused grants small buffs", "stats": {}},
+        {"count": 5, "effect": "Shimmer-Fused grants medium buffs", "stats": {}},
+        {"count": 7, "effect": "Shimmer-Fused grants large buffs", "stats": {}}
+      ],
+      "champions": ["blitzcrank", "ekko", "vi", "dr_mundo", "jinx", "warwick", "singed"]
+    },
+    {
+      "id": "darkin",
+      "name": "Darkin",
+      "type": "origin",
+      "description": "Darkin gain omnivamp and deal damage when healing.",
+      "mechanic": "Omnivamp",
+      "breakpoints": [
+        {"count": 1, "effect": "15% Omnivamp", "stats": {"omnivamp": 15}},
+        {"count": 2, "effect": "Heal 25% of player damage dealt", "stats": {}},
+        {"count": 3, "effect": "Healing triggers magic damage", "stats": {}}
+      ],
+      "champions": ["aatrox"]
+    }
+  ]
+}

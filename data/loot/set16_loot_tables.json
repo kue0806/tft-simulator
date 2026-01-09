@@ -1,0 +1,237 @@
+{
+  "set": 16,
+  "name": "Lore & Legends",
+  "description": "PvE loot drop tables and orb contents for TFT Set 16",
+  "sources": [
+    "https://tactics.tools/info/set-16/tables/loot-orbs",
+    "https://www.littlebuddybot.com/tft-loot-distribution-system",
+    "https://www.esportstales.com/teamfight-tactics/item-and-gold-drop-rate-by-pve-round"
+  ],
+  "pve_rounds": {
+    "1-2": {
+      "monster": "minions",
+      "guaranteed_orbs": 1,
+      "max_orbs": 2,
+      "orb_pool": ["gray", "blue"],
+      "component_chance": 0.33
+    },
+    "1-3": {
+      "monster": "minions",
+      "guaranteed_orbs": 1,
+      "max_orbs": 2,
+      "orb_pool": ["gray", "blue"],
+      "component_chance": 0.33
+    },
+    "1-4": {
+      "monster": "minions",
+      "guaranteed_orbs": 1,
+      "max_orbs": 2,
+      "orb_pool": ["gray", "blue"],
+      "component_chance": 0.34
+    },
+    "2-7": {
+      "monster": "krugs",
+      "guaranteed_orbs": 1,
+      "max_orbs": 2,
+      "orb_pool": ["gray", "blue", "gold"],
+      "component_chance": 0.5,
+      "gold_if_no_item": 5
+    },
+    "3-7": {
+      "monster": "wolves",
+      "guaranteed_orbs": 1,
+      "max_orbs": 2,
+      "orb_pool": ["gray", "blue", "gold"],
+      "component_chance": 0.5,
+      "gold_if_no_item": 5
+    },
+    "4-7": {
+      "monster": "raptors",
+      "guaranteed_orbs": 1,
+      "max_orbs": 2,
+      "orb_pool": ["blue", "gold"],
+      "component_chance": 0.6,
+      "gold_if_no_item": 5,
+      "last_component_round": true
+    },
+    "5-7": {
+      "monster": "rift_herald",
+      "guaranteed_orbs": 1,
+      "max_orbs": 2,
+      "orb_pool": ["gold", "prismatic"],
+      "guaranteed_item": true,
+      "special_drops": ["radiant", "artifact"]
+    },
+    "6-7": {
+      "monster": "elder_dragon",
+      "guaranteed_orbs": 2,
+      "max_orbs": 3,
+      "orb_pool": ["gold", "prismatic"],
+      "guaranteed_item": true,
+      "special_drops": ["radiant", "artifact"]
+    },
+    "7-7": {
+      "monster": "baron_nashor",
+      "guaranteed_orbs": 2,
+      "max_orbs": 4,
+      "orb_pool": ["gold", "prismatic"],
+      "guaranteed_item": true,
+      "special_drops": ["radiant", "artifact"]
+    }
+  },
+  "stage1_outcomes": {
+    "description": "Stage 1 has RNG protection - 3 possible outcomes total across 1-2, 1-3, 1-4",
+    "outcomes": [
+      {
+        "id": "items_heavy",
+        "probability": 0.33,
+        "total_items": 3,
+        "total_gold": 0,
+        "description": "2-3 component items"
+      },
+      {
+        "id": "balanced",
+        "probability": 0.34,
+        "total_items": 1,
+        "total_gold": 3,
+        "description": "1 item + 3 gold"
+      },
+      {
+        "id": "gold_heavy",
+        "probability": 0.33,
+        "total_items": 0,
+        "total_gold": 9,
+        "description": "9 gold (economic start)"
+      }
+    ]
+  },
+  "orbs": {
+    "gray": {
+      "name": "Silver Orb",
+      "stages_1_2": {
+        "value": 2,
+        "contents": [
+          {"chance": 0.48, "reward": "2x 1-cost champion"},
+          {"chance": 0.47, "reward": "1x 2-cost champion"},
+          {"chance": 0.03, "reward": "reforger + 2 gold"},
+          {"chance": 0.01, "reward": "magnetic_remover + 2 gold"},
+          {"chance": 0.01, "reward": "lesser_champion_duplicator"}
+        ]
+      },
+      "stages_3_plus": {
+        "value": 3,
+        "contents": [
+          {"chance": 0.49, "reward": "1x 3-cost champion"},
+          {"chance": 0.46, "reward": "1 gold + 1x 2-cost champion"},
+          {"chance": 0.03, "reward": "reforger + 3 gold"},
+          {"chance": 0.01, "reward": "magnetic_remover + 3 gold"},
+          {"chance": 0.01, "reward": "lesser_champion_duplicator"}
+        ]
+      }
+    },
+    "blue": {
+      "name": "Blue Orb",
+      "stages_1_3": {
+        "value": 6,
+        "contents": [
+          {"chance": 0.33, "reward": "2x 3-cost champions"},
+          {"chance": 0.31, "reward": "3 gold + 1x 3-cost champion"},
+          {"chance": 0.31, "reward": "3x 2-cost champions"},
+          {"chance": 0.02, "reward": "lesser_champion_duplicator + 2x 2-cost champions"},
+          {"chance": 0.02, "reward": "reforger + 6 gold"},
+          {"chance": 0.01, "reward": "champion_duplicator + 1x 3-cost champion"}
+        ]
+      },
+      "stages_4_plus": {
+        "value": 8,
+        "contents": [
+          {"chance": 0.49, "reward": "4 gold + 1x 4-cost champion"},
+          {"chance": 0.47, "reward": "2 gold + 2x 3-cost champions"},
+          {"chance": 0.03, "reward": "reforger + 8 gold"},
+          {"chance": 0.01, "reward": "champion_duplicator + 3 gold"}
+        ]
+      }
+    },
+    "gold": {
+      "name": "Gold Orb",
+      "stages_2_3": {
+        "value": 15,
+        "contents": [
+          {"chance": 0.20, "reward": "15 gold"},
+          {"chance": 0.18, "reward": "completed_item_anvil"},
+          {"chance": 0.15, "reward": "reforger + spatula_or_frying_pan + 4 gold"},
+          {"chance": 0.15, "reward": "6 gold + 2x 4-cost champions"},
+          {"chance": 0.13, "reward": "2 gold + 4x 3-cost champions"},
+          {"chance": 0.10, "reward": "thiefs_gloves + 1 gold"},
+          {"chance": 0.06, "reward": "6 gold + champion_duplicator"},
+          {"chance": 0.03, "reward": "2-star 3-cost champion + 5 gold"}
+        ]
+      },
+      "stages_4_plus": {
+        "value": 18,
+        "contents": [
+          {"chance": 0.20, "reward": "13 gold + 1x 5-cost champion"},
+          {"chance": 0.20, "reward": "2x component_anvils + 2 gold"},
+          {"chance": 0.15, "reward": "10 gold + 2x 4-cost champions"},
+          {"chance": 0.15, "reward": "completed_item_anvil + 2 gold"},
+          {"chance": 0.10, "reward": "thiefs_gloves + 3 gold"},
+          {"chance": 0.075, "reward": "8 gold + champion_duplicator"},
+          {"chance": 0.075, "reward": "7 gold + 2x 5-cost champions"},
+          {"chance": 0.05, "reward": "reforger + spatula_or_frying_pan + component_anvil + 1 gold"}
+        ]
+      }
+    },
+    "prismatic": {
+      "name": "Prismatic Orb",
+      "stages_3_plus": {
+        "value": 30,
+        "contents": [
+          {"chance": 0.15, "reward": "magnetic_remover + 2x artifact_item_anvils"},
+          {"chance": 0.15, "reward": "masterwork_upgrade + magnetic_remover + completed_item_anvil + 8 gold"},
+          {"chance": 0.15, "reward": "masterwork_upgrade + 24 gold"},
+          {"chance": 0.15, "reward": "spatula + reforger + component_anvil + completed_item_anvil + 18 gold"},
+          {"chance": 0.15, "reward": "radiant_armory + 10 gold"},
+          {"chance": 0.15, "reward": "frying_pan + reforger + completed_item_anvil + component_anvil + 18 gold"},
+          {"chance": 0.10, "reward": "magnetic_remover + artifact_item_anvil + 25 gold"}
+        ]
+      }
+    }
+  },
+  "components": [
+    "bf_sword",
+    "recurve_bow",
+    "needlessly_large_rod",
+    "tear_of_the_goddess",
+    "chain_vest",
+    "negatron_cloak",
+    "giants_belt",
+    "sparring_gloves",
+    "spatula"
+  ],
+  "special_items": {
+    "reforger": "Reforges one item into a random item using same components",
+    "magnetic_remover": "Removes an item from a champion, returning it to inventory",
+    "lesser_champion_duplicator": "Creates a 1-star copy of a champion (up to 3-cost)",
+    "champion_duplicator": "Creates a 1-star copy of any champion",
+    "component_anvil": "Choose 1 of 4 component items",
+    "completed_item_anvil": "Choose 1 of 5 completed items",
+    "artifact_item_anvil": "Choose 1 of 4 artifact items",
+    "radiant_armory": "Choose 1 of 5 radiant items",
+    "masterwork_upgrade": "Upgrades a completed item to radiant version",
+    "thiefs_gloves": "Equips 2 random items each round",
+    "spatula": "Crafts into emblem items",
+    "frying_pan": "Alternative to spatula in Set 16"
+  },
+  "rng_protection": {
+    "description": "If you get many items early (5+ during Stage 1), future drop rates decrease. Poor early luck increases later chances.",
+    "target_components_per_game": 8,
+    "component_variance": 2
+  },
+  "notes": [
+    "Completed items no longer drop directly from orbs in Set 16",
+    "Raptors (4-7) is the last round for component drops",
+    "Late game PvE (5-7+) always drops items, never gold-only",
+    "All players receive same quantity/quality of orbs, but contents vary",
+    "Spatula/emblem items only drop if you have that trait on board"
+  ]
+}

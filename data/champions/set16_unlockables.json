@@ -1,0 +1,968 @@
+{
+  "set": 16,
+  "name": "Lore & Legends - Unlockables",
+  "description": "Unlockable champions appear in shop after completing their unlock conditions",
+  "champions": [
+    {
+      "id": "bard",
+      "name": "Bard",
+      "cost": 2,
+      "traits": ["caretaker"],
+      "stats": {
+        "health": [600, 1080, 1944],
+        "mana": [40, 100],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.7,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Traveler's Call",
+        "description": "Bard collects chimes and supports allies with magical meeps.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Reroll 4 times before Stage 2 Carousel",
+      "unlock_type": "reroll",
+      "unlock_params": {"reroll_count": 4, "before_stage": "2-4"}
+    },
+    {
+      "id": "graves",
+      "name": "Graves",
+      "cost": 2,
+      "traits": ["bilgewater", "gunslinger"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 50],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.7,
+        "attack_range": 2
+      },
+      "ability": {
+        "name": "Buckshot",
+        "description": "Graves fires a cone of bullets dealing physical damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field Twisted Fate with 2 items equipped",
+      "unlock_type": "unit_items",
+      "unlock_params": {"champion_id": "twisted_fate", "item_count": 2}
+    },
+    {
+      "id": "orianna",
+      "name": "Orianna",
+      "cost": 2,
+      "traits": ["piltover", "invoker"],
+      "stats": {
+        "health": [550, 990, 1782],
+        "mana": [30, 80],
+        "armor": 25,
+        "magic_resist": 25,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.7,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Command: Shockwave",
+        "description": "Orianna commands her ball to pull and damage enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 3 unique Piltover units",
+      "unlock_type": "trait_units",
+      "unlock_params": {"trait_id": "piltover", "unit_count": 3}
+    },
+    {
+      "id": "poppy",
+      "name": "Poppy",
+      "cost": 2,
+      "traits": ["demacia", "yordle", "juggernaut"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [50, 120],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Steadfast Hammer",
+        "description": "Poppy shields herself and slams nearby enemies.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a Demacia or Yordle unit with 2 items equipped",
+      "unlock_type": "trait_unit_items",
+      "unlock_params": {"traits": ["demacia", "yordle"], "item_count": 2}
+    },
+    {
+      "id": "tryndamere",
+      "name": "Tryndamere",
+      "cost": 2,
+      "traits": ["freljord", "slayer"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 0],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Undying Rage",
+        "description": "Tryndamere becomes immune to death and gains attack damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field Ashe with 2 items equipped",
+      "unlock_type": "unit_items",
+      "unlock_params": {"champion_id": "ashe", "item_count": 2}
+    },
+    {
+      "id": "yorick",
+      "name": "Yorick",
+      "cost": 2,
+      "traits": ["shadow_isles", "warden"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [50, 120],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Last Rites",
+        "description": "Yorick summons ghouls to fight for him.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a 2-star Viego with 2 items equipped",
+      "unlock_type": "unit_star_items",
+      "unlock_params": {"champion_id": "viego", "star_level": 2, "item_count": 2}
+    },
+    {
+      "id": "darius",
+      "name": "Darius",
+      "cost": 3,
+      "traits": ["noxus", "defender"],
+      "stats": {
+        "health": [850, 1530, 2754],
+        "mana": [40, 100],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.65,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Noxian Guillotine",
+        "description": "Darius dunks on an enemy, executing low HP targets.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Have Draven drop 1 gold",
+      "unlock_type": "gold_drop",
+      "unlock_params": {"champion_id": "draven", "drop_count": 1}
+    },
+    {
+      "id": "gwen",
+      "name": "Gwen",
+      "cost": 3,
+      "traits": ["shadow_isles", "disruptor"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [20, 70],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.85,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Snip Snip!",
+        "description": "Gwen snips enemies with her scissors, dealing magic damage.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Collect 20 Shadow Isles Souls",
+      "unlock_type": "souls",
+      "unlock_params": {"soul_count": 20}
+    },
+    {
+      "id": "kennen",
+      "name": "Kennen",
+      "cost": 3,
+      "traits": ["ionia", "yordle", "defender"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [50, 120],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 2
+      },
+      "ability": {
+        "name": "Slicing Maelstrom",
+        "description": "Kennen summons a storm that damages and stuns enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 8 unique star levels of Ionia, Yordle, or Defender units",
+      "unlock_type": "trait_star_levels",
+      "unlock_params": {"traits": ["ionia", "yordle", "defender"], "star_levels": 8}
+    },
+    {
+      "id": "kobuko_yuumi",
+      "name": "Kobuko & Yuumi",
+      "cost": 3,
+      "traits": ["yordle", "bruiser", "invoker"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [30, 90],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.65,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Together Forever",
+        "description": "Yuumi heals Kobuko while he charges into battle.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 6 unique star levels of Yordle, Bruiser, or Invoker units (Level 7)",
+      "unlock_type": "trait_star_levels",
+      "unlock_params": {"traits": ["yordle", "bruiser", "invoker"], "star_levels": 6, "min_level": 7}
+    },
+    {
+      "id": "leblanc",
+      "name": "LeBlanc",
+      "cost": 3,
+      "traits": ["noxus", "invoker"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [20, 60],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.8,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Ethereal Chains",
+        "description": "LeBlanc chains enemies and detonates her mark.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field Sion with 2 items equipped",
+      "unlock_type": "unit_items",
+      "unlock_params": {"champion_id": "sion", "item_count": 2}
+    },
+    {
+      "id": "diana",
+      "name": "Diana",
+      "cost": 4,
+      "traits": ["targon", "slayer"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [30, 80],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.85,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Lunar Rush",
+        "description": "Diana dashes to enemies and shields herself.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 2-star Leona with 3 items equipped (Level 6)",
+      "unlock_type": "unit_star_items",
+      "unlock_params": {"champion_id": "leona", "star_level": 2, "item_count": 3, "min_level": 6}
+    },
+    {
+      "id": "fizz",
+      "name": "Fizz",
+      "cost": 4,
+      "traits": ["bilgewater", "yordle", "slayer"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [0, 60],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.85,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Chum the Waters",
+        "description": "Fizz throws a fish that attracts a shark to attack enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 5 unique Yordles or Bilgewater units (Level 7)",
+      "unlock_type": "trait_units",
+      "unlock_params": {"traits": ["yordle", "bilgewater"], "unit_count": 5, "min_level": 7}
+    },
+    {
+      "id": "kaisa",
+      "name": "Kai'Sa",
+      "cost": 4,
+      "traits": ["void", "longshot"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [0, 80],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.9,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Icathian Rain",
+        "description": "Kai'Sa fires missiles that adapt based on AD/AP.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a Longshot unit with 3 items equipped (Level 8)",
+      "unlock_type": "trait_unit_items",
+      "unlock_params": {"traits": ["longshot"], "item_count": 3, "min_level": 8}
+    },
+    {
+      "id": "kalista",
+      "name": "Kalista",
+      "cost": 4,
+      "traits": ["shadow_isles", "vanquisher"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 0],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 1.0,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Rend",
+        "description": "Kalista's attacks stack spears that she rends for massive damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Collect 70 Shadow Isles Souls",
+      "unlock_type": "souls",
+      "unlock_params": {"soul_count": 70}
+    },
+    {
+      "id": "nasus",
+      "name": "Nasus",
+      "cost": 4,
+      "traits": ["shurima", "juggernaut"],
+      "stats": {
+        "health": [900, 1620, 2916],
+        "mana": [40, 100],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Siphoning Strike",
+        "description": "Nasus empowers his next attack with bonus damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Lose 2/4/5 combats in a row with Azir fielded",
+      "unlock_type": "loss_streak_with_unit",
+      "unlock_params": {"champion_id": "azir", "streak_counts": [2, 4, 5]}
+    },
+    {
+      "id": "nidalee",
+      "name": "Nidalee",
+      "cost": 4,
+      "traits": ["ixtal", "huntress"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [30, 80],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Javelin Toss",
+        "description": "Nidalee throws a javelin and transforms into cougar form.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field two 2-star Neekos",
+      "unlock_type": "unit_star_count",
+      "unlock_params": {"champion_id": "neeko", "star_level": 2, "unit_count": 2}
+    },
+    {
+      "id": "renekton",
+      "name": "Renekton",
+      "cost": 4,
+      "traits": ["shurima", "slayer"],
+      "stats": {
+        "health": [850, 1530, 2754],
+        "mana": [30, 80],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Cull the Meek",
+        "description": "Renekton slashes enemies around him and heals.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Win 2/4/5 combats in a row with Azir fielded",
+      "unlock_type": "win_streak_with_unit",
+      "unlock_params": {"champion_id": "azir", "streak_counts": [2, 4, 5]}
+    },
+    {
+      "id": "rift_herald",
+      "name": "Rift Herald",
+      "cost": 4,
+      "traits": ["void", "bruiser"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [0, 0],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.55,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Charge",
+        "description": "Rift Herald charges forward, damaging enemies in its path.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Have Void active for 8 player combats",
+      "unlock_type": "trait_combat_count",
+      "unlock_params": {"trait_id": "void", "combat_count": 8}
+    },
+    {
+      "id": "singed",
+      "name": "Singed",
+      "cost": 4,
+      "traits": ["zaun", "juggernaut"],
+      "stats": {
+        "health": [900, 1620, 2916],
+        "mana": [50, 120],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Poison Trail",
+        "description": "Singed leaves a trail of poison behind him.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 4 unique Zaunites or Juggernauts and lose 35 player health",
+      "unlock_type": "trait_units_and_hp_lost",
+      "unlock_params": {"traits": ["zaun", "juggernaut"], "unit_count": 4, "hp_lost": 35}
+    },
+    {
+      "id": "skarner",
+      "name": "Skarner",
+      "cost": 4,
+      "traits": ["ixtal", "bruiser"],
+      "stats": {
+        "health": [950, 1710, 3078],
+        "mana": [60, 120],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Impale",
+        "description": "Skarner suppresses an enemy and drags them toward him.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a non-Tank unit with Gargoyle Stoneplate equipped",
+      "unlock_type": "item_on_non_role",
+      "unlock_params": {"item_id": "gargoyle_stoneplate", "excluded_role": "tank"}
+    },
+    {
+      "id": "veigar",
+      "name": "Veigar",
+      "cost": 4,
+      "traits": ["yordle", "arcanist"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [40, 100],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [40, 72, 130],
+        "attack_speed": 0.7,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Primordial Burst",
+        "description": "Veigar blasts an enemy with massive magic damage.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a unit with 2 Rabadon's Deathcaps equipped",
+      "unlock_type": "duplicate_item",
+      "unlock_params": {"item_id": "rabadons_deathcap", "item_count": 2}
+    },
+    {
+      "id": "warwick",
+      "name": "Warwick",
+      "cost": 4,
+      "traits": ["zaun", "slayer"],
+      "stats": {
+        "health": [850, 1530, 2754],
+        "mana": [40, 100],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.85,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Infinite Duress",
+        "description": "Warwick leaps to an enemy and suppresses them.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 2-star Jinx and 2-star Vi",
+      "unlock_type": "multiple_unit_stars",
+      "unlock_params": {"requirements": [{"champion_id": "jinx", "star_level": 2}, {"champion_id": "vi", "star_level": 2}]}
+    },
+    {
+      "id": "yone",
+      "name": "Yone",
+      "cost": 4,
+      "traits": ["ionia", "slayer"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [0, 60],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.9,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Fate Sealed",
+        "description": "Yone dashes through enemies, dealing critical strikes.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a 3-star Yasuo",
+      "unlock_type": "unit_star",
+      "unlock_params": {"champion_id": "yasuo", "star_level": 3}
+    },
+    {
+      "id": "aatrox",
+      "name": "Aatrox",
+      "cost": 5,
+      "traits": ["darkin", "world_ender"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [30, 80],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [75, 135, 243],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "World Ender",
+        "description": "Aatrox transforms, gaining power from his omnivamp.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Level 8 + field a champion starting with 40% Omnivamp",
+      "unlock_type": "stat_threshold",
+      "unlock_params": {"min_level": 8, "stat": "omnivamp", "threshold": 40}
+    },
+    {
+      "id": "galio",
+      "name": "Galio",
+      "cost": 5,
+      "traits": ["demacia", "heroic"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [100, 180],
+        "armor": 65,
+        "magic_resist": 65,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.5,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Hero's Entrance",
+        "description": "Galio crashes down and taunts nearby enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 12 unique star levels of Demacia units",
+      "unlock_type": "trait_star_levels",
+      "unlock_params": {"traits": ["demacia"], "star_levels": 12}
+    },
+    {
+      "id": "mel",
+      "name": "Mel",
+      "cost": 5,
+      "traits": ["noxus", "invoker"],
+      "stats": {
+        "health": [900, 1620, 2916],
+        "mana": [40, 100],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Political Manipulation",
+        "description": "Mel empowers allies and debuffs enemies with her influence.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 2-star Ambessa with an item that breaks in combat",
+      "unlock_type": "unit_item_break",
+      "unlock_params": {"champion_id": "ambessa", "star_level": 2}
+    },
+    {
+      "id": "sett",
+      "name": "Sett",
+      "cost": 5,
+      "traits": ["ionia", "bruiser"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [50, 120],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "The Show Stopper",
+        "description": "Sett grabs the nearest enemy and slams them down.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field only 1 unit in the two front rows",
+      "unlock_type": "front_row_count",
+      "unlock_params": {"max_units": 1}
+    },
+    {
+      "id": "t_hex",
+      "name": "T-Hex",
+      "cost": 5,
+      "traits": ["piltover", "hexmech"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 0],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.55,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Overdrive",
+        "description": "T-Hex pilots gain power based on their role.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 9 unique star levels of Piltover units",
+      "unlock_type": "trait_star_levels",
+      "unlock_params": {"traits": ["piltover"], "star_levels": 9}
+    },
+    {
+      "id": "tahm_kench",
+      "name": "Tahm Kench",
+      "cost": 5,
+      "traits": ["bilgewater", "glutton"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [60, 120],
+        "armor": 65,
+        "magic_resist": 65,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.55,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Devour",
+        "description": "Tahm Kench devours an enemy, dealing true damage.",
+        "damage_type": "true"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Spend 500 Bilgewater Silver Serpents",
+      "unlock_type": "serpents_spent",
+      "unlock_params": {"serpent_count": 500}
+    },
+    {
+      "id": "thresh",
+      "name": "Thresh",
+      "cost": 5,
+      "traits": ["shadow_isles", "warden"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [60, 140],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.55,
+        "attack_range": 2
+      },
+      "ability": {
+        "name": "The Box",
+        "description": "Thresh creates walls that damage and slow enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Collect 175 Shadow Isles Souls",
+      "unlock_type": "souls",
+      "unlock_params": {"soul_count": 175}
+    },
+    {
+      "id": "volibear",
+      "name": "Volibear",
+      "cost": 5,
+      "traits": ["freljord", "juggernaut"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [60, 140],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Stormbringer",
+        "description": "Volibear becomes empowered with lightning.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a unit with 3800 health (Level 8)",
+      "unlock_type": "stat_threshold",
+      "unlock_params": {"min_level": 8, "stat": "health", "threshold": 3800}
+    },
+    {
+      "id": "xerath",
+      "name": "Xerath",
+      "cost": 5,
+      "traits": ["shurima", "arcanist"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [40, 120],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.8,
+        "attack_range": 5
+      },
+      "ability": {
+        "name": "Rite of the Arcane",
+        "description": "Xerath fires arcane barrages at enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Alternate winning and losing for 3/5/6 combats with Azir fielded",
+      "unlock_type": "alternate_results_with_unit",
+      "unlock_params": {"champion_id": "azir", "alternate_counts": [3, 5, 6]}
+    },
+    {
+      "id": "ziggs",
+      "name": "Ziggs",
+      "cost": 5,
+      "traits": ["yordle", "arcanist"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [30, 80],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Mega Inferno Bomb",
+        "description": "Ziggs hurls a massive bomb at the largest group of enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field a Yordle or Zaunite with 3 items equipped (Level 9)",
+      "unlock_type": "trait_unit_items",
+      "unlock_params": {"traits": ["yordle", "zaun"], "item_count": 3, "min_level": 9}
+    },
+    {
+      "id": "aurelion_sol",
+      "name": "Aurelion Sol",
+      "cost": 7,
+      "traits": ["targon", "star_forger"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [60, 150],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.7,
+        "attack_range": 5
+      },
+      "ability": {
+        "name": "Voice of Light",
+        "description": "Aurelion Sol breathes starfire across the battlefield.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 5 unique Targonians",
+      "unlock_type": "trait_units",
+      "unlock_params": {"trait_id": "targon", "unit_count": 5}
+    },
+    {
+      "id": "baron_nashor",
+      "name": "Baron Nashor",
+      "cost": 7,
+      "traits": ["void", "riftscourge"],
+      "stats": {
+        "health": [2000, 3600, 6480],
+        "mana": [0, 100],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [100, 180, 324],
+        "attack_speed": 0.5,
+        "attack_range": 2
+      },
+      "ability": {
+        "name": "Void Rift",
+        "description": "Baron Nashor spews acid, knocks up enemies, and pulls them into the void.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Level 10 + field 7 unique Void units",
+      "unlock_type": "trait_units",
+      "unlock_params": {"trait_id": "void", "unit_count": 7, "min_level": 10},
+      "slots": 2
+    },
+    {
+      "id": "brock",
+      "name": "Brock",
+      "cost": 7,
+      "traits": ["ixtal", "bruiser"],
+      "stats": {
+        "health": [1400, 2520, 4536],
+        "mana": [40, 100],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [80, 144, 259],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Elemental Force",
+        "description": "Brock channels elemental power to devastate enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Collect 500 Ixtal Sunshards",
+      "unlock_type": "sunshards",
+      "unlock_params": {"sunshard_count": 500}
+    },
+    {
+      "id": "ryze",
+      "name": "Ryze",
+      "cost": 7,
+      "traits": ["rune_mage", "arcanist"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [30, 80],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Realm Warp",
+        "description": "Ryze benefits from all active region traits.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Field 4 Region Traits together (Level 9)",
+      "unlock_type": "region_count",
+      "unlock_params": {"region_count": 4, "min_level": 9}
+    },
+    {
+      "id": "sylas",
+      "name": "Sylas",
+      "cost": 7,
+      "traits": ["demacia", "chainbreaker"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [30, 80],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Hijack",
+        "description": "Sylas rotates between 3 different stolen abilities.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Sell 2-star Jarvan, 2-star Garen, and 2-star Lux",
+      "unlock_type": "sell_units",
+      "unlock_params": {"requirements": [{"champion_id": "jarvan_iv", "star_level": 2}, {"champion_id": "garen", "star_level": 2}, {"champion_id": "lux", "star_level": 2}]}
+    },
+    {
+      "id": "zaahen",
+      "name": "Zaahen",
+      "cost": 7,
+      "traits": ["shurima", "juggernaut"],
+      "stats": {
+        "health": [1300, 2340, 4212],
+        "mana": [50, 120],
+        "armor": 65,
+        "magic_resist": 65,
+        "attack_damage": [75, 135, 243],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Sandstorm",
+        "description": "Zaahen summons a devastating sandstorm around him.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": true,
+      "unlock_condition": "Select Trials of Twilight augment and field 3-star Xin Zhao for 5 combats",
+      "unlock_type": "augment_and_unit",
+      "unlock_params": {"augment_id": "trials_of_twilight", "champion_id": "xin_zhao", "star_level": 3, "combat_count": 5}
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "set": 16,
+  "items": [
+    {
+      "id": "deathblade",
+      "name": "Deathblade",
+      "type": "combined",
+      "components": ["bf_sword", "bf_sword"],
+      "stats": {"ad": 55},
+      "effect": "Gain 8 AD on takedown (max 10 stacks).",
+      "is_unique": false
+    },
+    {
+      "id": "giant_slayer",
+      "name": "Giant Slayer",
+      "type": "combined",
+      "components": ["bf_sword", "recurve_bow"],
+      "stats": {"ad": 25, "attack_speed": 10},
+      "effect": "Deal 25% more damage to enemies with 1600+ max HP.",
+      "is_unique": true
+    },
+    {
+      "id": "hextech_gunblade",
+      "name": "Hextech Gunblade",
+      "type": "combined",
+      "components": ["bf_sword", "needlessly_large_rod"],
+      "stats": {"ad": 15, "ap": 15},
+      "effect": "Heal for 25% of damage dealt. Excess healing becomes a shield.",
+      "is_unique": false
+    },
+    {
+      "id": "spear_of_shojin",
+      "name": "Spear of Shojin",
+      "type": "combined",
+      "components": ["bf_sword", "tear_of_the_goddess"],
+      "stats": {"ad": 15, "mana": 15},
+      "effect": "Attacks restore 8 mana.",
+      "is_unique": false
+    },
+    {
+      "id": "edge_of_night",
+      "name": "Edge of Night",
+      "type": "combined",
+      "components": ["bf_sword", "chain_vest"],
+      "stats": {"ad": 15, "armor": 20},
+      "effect": "Once per combat, become stealthed and gain 40% attack speed.",
+      "is_unique": true
+    },
+    {
+      "id": "bloodthirster",
+      "name": "Bloodthirster",
+      "type": "combined",
+      "components": ["bf_sword", "negatron_cloak"],
+      "stats": {"ad": 15, "mr": 20},
+      "effect": "25% Omnivamp. Once per combat, gain a 25% max HP shield for 5 seconds.",
+      "is_unique": false
+    },
+    {
+      "id": "zekes_herald",
+      "name": "Zeke's Herald",
+      "type": "combined",
+      "components": ["bf_sword", "giants_belt"],
+      "stats": {"ad": 15, "health": 150},
+      "effect": "Allies within 1 hex gain 30% attack speed.",
+      "is_unique": true
+    },
+    {
+      "id": "infinity_edge",
+      "name": "Infinity Edge",
+      "type": "combined",
+      "components": ["bf_sword", "sparring_gloves"],
+      "stats": {"ad": 35, "crit_chance": 35},
+      "effect": "Abilities can critically strike. +10% Crit Damage.",
+      "is_unique": true
+    },
+    {
+      "id": "rageblade",
+      "name": "Guinsoo's Rageblade",
+      "type": "combined",
+      "components": ["recurve_bow", "needlessly_large_rod"],
+      "stats": {"ap": 10, "attack_speed": 10},
+      "effect": "Attacks grant 5% bonus attack speed. Stacks infinitely.",
+      "is_unique": false
+    },
+    {
+      "id": "statikk_shiv",
+      "name": "Statikk Shiv",
+      "type": "combined",
+      "components": ["recurve_bow", "tear_of_the_goddess"],
+      "stats": {"attack_speed": 15, "mana": 15},
+      "effect": "Every 3rd attack deals magic damage to 4 enemies and shreds MR.",
+      "is_unique": false
+    },
+    {
+      "id": "titans_resolve",
+      "name": "Titan's Resolve",
+      "type": "combined",
+      "components": ["recurve_bow", "chain_vest"],
+      "stats": {"attack_speed": 10, "armor": 20},
+      "effect": "Gain 2 AD and AP on attack/taking damage (max 25 stacks). At max stacks, gain 25 Armor and MR.",
+      "is_unique": true
+    },
+    {
+      "id": "runaans_hurricane",
+      "name": "Runaan's Hurricane",
+      "type": "combined",
+      "components": ["recurve_bow", "negatron_cloak"],
+      "stats": {"attack_speed": 10, "mr": 20},
+      "effect": "Attacks fire bolts at 2 nearby enemies, dealing 55% AD.",
+      "is_unique": true
+    },
+    {
+      "id": "red_buff",
+      "name": "Sunfire Cape",
+      "type": "combined",
+      "components": ["recurve_bow", "giants_belt"],
+      "stats": {"attack_speed": 10, "health": 150},
+      "effect": "Every 2 seconds, deal magic damage to adjacent enemies and burn them.",
+      "is_unique": true
+    },
+    {
+      "id": "rapid_firecannon",
+      "name": "Rapid Firecannon",
+      "type": "combined",
+      "components": ["recurve_bow", "recurve_bow"],
+      "stats": {"attack_speed": 55},
+      "effect": "Gain 1 attack range. Attacks cannot miss.",
+      "is_unique": true
+    },
+    {
+      "id": "last_whisper",
+      "name": "Last Whisper",
+      "type": "combined",
+      "components": ["recurve_bow", "sparring_gloves"],
+      "stats": {"attack_speed": 20, "crit_chance": 20},
+      "effect": "Physical damage shreds 50% of the target's Armor for 3 seconds.",
+      "is_unique": true
+    },
+    {
+      "id": "rabadons_deathcap",
+      "name": "Rabadon's Deathcap",
+      "type": "combined",
+      "components": ["needlessly_large_rod", "needlessly_large_rod"],
+      "stats": {"ap": 70},
+      "effect": null,
+      "is_unique": false
+    },
+    {
+      "id": "archangels_staff",
+      "name": "Archangel's Staff",
+      "type": "combined",
+      "components": ["needlessly_large_rod", "tear_of_the_goddess"],
+      "stats": {"ap": 15, "mana": 15},
+      "effect": "Gain 20 AP every 5 seconds.",
+      "is_unique": false
+    },
+    {
+      "id": "locket_of_the_iron_solari",
+      "name": "Locket of the Iron Solari",
+      "type": "combined",
+      "components": ["needlessly_large_rod", "chain_vest"],
+      "stats": {"ap": 15, "armor": 25},
+      "effect": "At combat start, shield allies in the same row for 8 seconds.",
+      "is_unique": true
+    },
+    {
+      "id": "ionic_spark",
+      "name": "Ionic Spark",
+      "type": "combined",
+      "components": ["needlessly_large_rod", "negatron_cloak"],
+      "stats": {"ap": 15, "mr": 25},
+      "effect": "50% Shred. Enemies within 2 hexes take magic damage when casting.",
+      "is_unique": true
+    },
+    {
+      "id": "morellonomicon",
+      "name": "Morellonomicon",
+      "type": "combined",
+      "components": ["needlessly_large_rod", "giants_belt"],
+      "stats": {"ap": 25, "health": 150},
+      "effect": "Abilities burn enemies for 10 seconds, dealing 1% max HP as true damage per second and reducing healing.",
+      "is_unique": true
+    },
+    {
+      "id": "jeweled_gauntlet",
+      "name": "Jeweled Gauntlet",
+      "type": "combined",
+      "components": ["needlessly_large_rod", "sparring_gloves"],
+      "stats": {"ap": 35, "crit_chance": 35},
+      "effect": "Abilities can critically strike. +10% Crit Damage.",
+      "is_unique": true
+    },
+    {
+      "id": "blue_buff",
+      "name": "Blue Buff",
+      "type": "combined",
+      "components": ["tear_of_the_goddess", "tear_of_the_goddess"],
+      "stats": {"mana": 30, "ap": 20},
+      "effect": "Gain 20 starting mana. After casting, set mana to 20.",
+      "is_unique": true
+    },
+    {
+      "id": "frozen_heart",
+      "name": "Frozen Heart",
+      "type": "combined",
+      "components": ["tear_of_the_goddess", "chain_vest"],
+      "stats": {"mana": 15, "armor": 35},
+      "effect": "Reduce attack speed of enemies within 2 hexes by 25%.",
+      "is_unique": true
+    },
+    {
+      "id": "chalice_of_power",
+      "name": "Chalice of Power",
+      "type": "combined",
+      "components": ["tear_of_the_goddess", "negatron_cloak"],
+      "stats": {"mana": 15, "mr": 25},
+      "effect": "At combat start, grant 30 AP to allies in the same row.",
+      "is_unique": false
+    },
+    {
+      "id": "redemption",
+      "name": "Redemption",
+      "type": "combined",
+      "components": ["tear_of_the_goddess", "giants_belt"],
+      "stats": {"mana": 15, "health": 150},
+      "effect": "Heal allies within 1 hex for 15% max HP every 5 seconds. Take 25% less multi-target damage.",
+      "is_unique": true
+    },
+    {
+      "id": "hand_of_justice",
+      "name": "Hand of Justice",
+      "type": "combined",
+      "components": ["tear_of_the_goddess", "sparring_gloves"],
+      "stats": {"mana": 15, "crit_chance": 15},
+      "effect": "Gain 15% AD and AP, and 15% Omnivamp.",
+      "is_unique": false
+    },
+    {
+      "id": "bramble_vest",
+      "name": "Bramble Vest",
+      "type": "combined",
+      "components": ["chain_vest", "chain_vest"],
+      "stats": {"armor": 70},
+      "effect": "Take 8% less damage from attacks. Attackers take magic damage.",
+      "is_unique": true
+    },
+    {
+      "id": "gargoyle_stoneplate",
+      "name": "Gargoyle Stoneplate",
+      "type": "combined",
+      "components": ["chain_vest", "negatron_cloak"],
+      "stats": {"armor": 25, "mr": 25},
+      "effect": "Gain 10 Armor and MR for each enemy targeting this unit.",
+      "is_unique": true
+    },
+    {
+      "id": "sunfire_cape",
+      "name": "Warmog's Armor",
+      "type": "combined",
+      "components": ["chain_vest", "giants_belt"],
+      "stats": {"armor": 25, "health": 450},
+      "effect": "Regenerate 3% max HP per second.",
+      "is_unique": true
+    },
+    {
+      "id": "shroud_of_stillness",
+      "name": "Shroud of Stillness",
+      "type": "combined",
+      "components": ["chain_vest", "sparring_gloves"],
+      "stats": {"armor": 25, "crit_chance": 15},
+      "effect": "At combat start, increase max mana of enemies within 2 hexes by 30%.",
+      "is_unique": true
+    },
+    {
+      "id": "dragons_claw",
+      "name": "Dragon's Claw",
+      "type": "combined",
+      "components": ["negatron_cloak", "negatron_cloak"],
+      "stats": {"mr": 65},
+      "effect": "Take 10% less ability damage. Every 2 seconds, heal 1.2% max HP for each enemy targeting this unit.",
+      "is_unique": true
+    },
+    {
+      "id": "quicksilver",
+      "name": "Quicksilver",
+      "type": "combined",
+      "components": ["negatron_cloak", "sparring_gloves"],
+      "stats": {"mr": 20, "crit_chance": 20, "attack_speed": 30},
+      "effect": "Combat start: Immune to CC for 14 seconds.",
+      "is_unique": true
+    },
+    {
+      "id": "zephyr",
+      "name": "Zephyr",
+      "type": "combined",
+      "components": ["negatron_cloak", "giants_belt"],
+      "stats": {"mr": 25, "health": 200},
+      "effect": "At combat start, banish an enemy for 5 seconds.",
+      "is_unique": true
+    },
+    {
+      "id": "warmogs_armor",
+      "name": "Sterak's Gage",
+      "type": "combined",
+      "components": ["giants_belt", "giants_belt"],
+      "stats": {"health": 500, "ad": 20},
+      "effect": "When below 60% HP, gain 25% max HP as a shield and 40% AD.",
+      "is_unique": true
+    },
+    {
+      "id": "thiefs_gloves",
+      "name": "Thief's Gloves",
+      "type": "combined",
+      "components": ["sparring_gloves", "sparring_gloves"],
+      "stats": {},
+      "effect": "Each round, equip 2 random items. Consumes 3 item slots.",
+      "is_unique": true
+    },
+    {
+      "id": "tacticians_crown",
+      "name": "Tactician's Crown",
+      "type": "combined",
+      "components": ["spatula", "spatula"],
+      "stats": {},
+      "effect": "Gain +1 maximum team size.",
+      "is_unique": true
+    },
+    {
+      "id": "guardbreaker",
+      "name": "Guardbreaker",
+      "type": "combined",
+      "components": ["giants_belt", "sparring_gloves"],
+      "stats": {"health": 150, "crit_chance": 20},
+      "effect": "After damaging a shielded enemy, deal 25% more damage to them for 3 seconds.",
+      "is_unique": true
+    }
+  ]
+}

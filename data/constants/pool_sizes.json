@@ -1,0 +1,13 @@
+{
+  "set": 16,
+  "description": "Number of copies of each champion in the shared pool (8-player game)",
+  "pool_sizes": {
+    "1": 30,
+    "2": 25,
+    "3": 18,
+    "4": 10,
+    "5": 9,
+    "6": 8,
+    "7": 6
+  }
+}

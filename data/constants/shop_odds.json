@@ -1,0 +1,17 @@
+{
+  "set": 16,
+  "description": "Probability of each cost tier appearing in shop by player level",
+  "note": "Values are percentages [1-cost, 2-cost, 3-cost, 4-cost, 5-cost]",
+  "shop_odds": {
+    "1": [100, 0, 0, 0, 0],
+    "2": [100, 0, 0, 0, 0],
+    "3": [75, 25, 0, 0, 0],
+    "4": [55, 30, 15, 0, 0],
+    "5": [45, 33, 20, 2, 0],
+    "6": [30, 40, 25, 5, 0],
+    "7": [19, 30, 40, 10, 1],
+    "8": [18, 25, 32, 22, 3],
+    "9": [10, 20, 25, 35, 10],
+    "10": [5, 10, 20, 40, 25]
+  }
+}

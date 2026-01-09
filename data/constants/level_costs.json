@@ -1,0 +1,17 @@
+{
+  "set": 16,
+  "description": "XP required to reach each level",
+  "level_xp": {
+    "2": 2,
+    "3": 6,
+    "4": 10,
+    "5": 20,
+    "6": 36,
+    "7": 56,
+    "8": 80,
+    "9": 84,
+    "10": 100
+  },
+  "xp_per_round": 2,
+  "reroll_cost": 2
+}

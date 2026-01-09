@@ -1,0 +1,331 @@
+{
+  "set": 16,
+  "classes": [
+    {
+      "id": "arcanist",
+      "name": "Arcanist",
+      "type": "class",
+      "description": "All allies gain Ability Power. Arcanists gain bonus AP.",
+      "breakpoints": [
+        {"count": 2, "effect": "18 AP, 25 AP for Arcanists", "stats": {"ap": 18, "arcanist_ap": 25}},
+        {"count": 4, "effect": "25 AP, 45 AP for Arcanists", "stats": {"ap": 25, "arcanist_ap": 45}},
+        {"count": 6, "effect": "40 AP, 70 AP for Arcanists", "stats": {"ap": 40, "arcanist_ap": 70}}
+      ],
+      "champions": ["anivia", "lulu", "twisted_fate", "ahri", "malzahar", "lissandra", "lux", "swain", "fiddlesticks", "xerath", "veigar"]
+    },
+    {
+      "id": "bruiser",
+      "name": "Bruiser",
+      "type": "class",
+      "description": "All allies gain bonus max health.",
+      "breakpoints": [
+        {"count": 2, "effect": "+25% max health", "stats": {"health_percent": 25}},
+        {"count": 4, "effect": "+45% max health", "stats": {"health_percent": 45}},
+        {"count": 6, "effect": "+65% max health", "stats": {"health_percent": 65}}
+      ],
+      "champions": ["illaoi", "rumble", "chogath", "reksai", "vi", "sejuani", "ambessa", "wukong", "sett", "kobuko_yuumi", "rift_herald"]
+    },
+    {
+      "id": "defender",
+      "name": "Defender",
+      "type": "class",
+      "description": "All allies gain Armor and Magic Resist.",
+      "breakpoints": [
+        {"count": 2, "effect": "+30 Armor & MR", "stats": {"armor": 30, "mr": 30}},
+        {"count": 4, "effect": "+55 Armor & MR", "stats": {"armor": 55, "mr": 55}},
+        {"count": 6, "effect": "+80 Armor & MR", "stats": {"armor": 80, "mr": 80}}
+      ],
+      "champions": ["shen", "sion", "leona", "garen", "taric", "kennen", "darius"]
+    },
+    {
+      "id": "disruptor",
+      "name": "Disruptor",
+      "type": "class",
+      "description": "Enemies hit by abilities gain Dazzle. Deal bonus damage to Dazzled enemies.",
+      "breakpoints": [
+        {"count": 2, "effect": "+25% bonus damage to Dazzled enemies", "stats": {"dazzle_damage": 25}},
+        {"count": 4, "effect": "+45% bonus damage to Dazzled enemies", "stats": {"dazzle_damage": 45}}
+      ],
+      "champions": ["zoe", "yunara", "gwen"]
+    },
+    {
+      "id": "gunslinger",
+      "name": "Gunslinger",
+      "type": "class",
+      "description": "Gain AD. Every 4th attack deals bonus damage.",
+      "breakpoints": [
+        {"count": 2, "effect": "+20% AD, 100 bonus damage on 4th attack", "stats": {"ad_percent": 20, "bonus_damage": 100}},
+        {"count": 4, "effect": "+35% AD, 200 bonus damage on 4th attack", "stats": {"ad_percent": 35, "bonus_damage": 200}}
+      ],
+      "champions": ["tristana", "draven", "gangplank", "jinx", "miss_fortune", "graves"]
+    },
+    {
+      "id": "invoker",
+      "name": "Invoker",
+      "type": "class",
+      "description": "Team gains mana regen. Invokers gain bonus mana.",
+      "breakpoints": [
+        {"count": 2, "effect": "+1 mana regen, +25% mana for Invokers", "stats": {"mana_regen": 1, "invoker_mana": 25}},
+        {"count": 4, "effect": "+2 mana regen, +45% mana for Invokers", "stats": {"mana_regen": 2, "invoker_mana": 45}}
+      ],
+      "champions": ["sona", "milio", "seraphine", "mel", "orianna", "leblanc", "kobuko_yuumi"]
+    },
+    {
+      "id": "juggernaut",
+      "name": "Juggernaut",
+      "type": "class",
+      "description": "Gain durability that scales with missing health. Heal when allies die.",
+      "breakpoints": [
+        {"count": 2, "effect": "Durability scaling, small heal", "stats": {}},
+        {"count": 4, "effect": "Increased durability, medium heal", "stats": {}},
+        {"count": 6, "effect": "Maximum durability, large heal", "stats": {}}
+      ],
+      "champions": ["blitzcrank", "dr_mundo", "nasus", "volibear", "singed", "poppy"]
+    },
+    {
+      "id": "longshot",
+      "name": "Longshot",
+      "type": "class",
+      "description": "Gain Damage Amp. Deal bonus damage based on distance to target.",
+      "breakpoints": [
+        {"count": 2, "effect": "+10% Damage Amp, distance bonus", "stats": {"damage_amp": 10}},
+        {"count": 3, "effect": "+18% Damage Amp, increased distance bonus", "stats": {"damage_amp": 18}},
+        {"count": 4, "effect": "+28% Damage Amp, maximum distance bonus", "stats": {"damage_amp": 28}},
+        {"count": 5, "effect": "+40% Damage Amp, huge distance bonus", "stats": {"damage_amp": 40}}
+      ],
+      "champions": ["caitlyn", "jhin", "kogmaw", "aphelios", "ashe", "vayne", "kaisa"]
+    },
+    {
+      "id": "quickstriker",
+      "name": "Quickstriker",
+      "type": "class",
+      "description": "Gain Attack Speed that increases based on target's missing health.",
+      "breakpoints": [
+        {"count": 2, "effect": "Base attack speed bonus", "stats": {}},
+        {"count": 3, "effect": "Increased attack speed bonus", "stats": {}},
+        {"count": 4, "effect": "Large attack speed bonus", "stats": {}},
+        {"count": 5, "effect": "Maximum attack speed bonus", "stats": {}}
+      ],
+      "champions": ["ekko", "teemo", "kindred"]
+    },
+    {
+      "id": "slayer",
+      "name": "Slayer",
+      "type": "class",
+      "description": "Gain AD and Omnivamp that scale with missing health.",
+      "breakpoints": [
+        {"count": 2, "effect": "+22% AD, 10% Omnivamp", "stats": {"ad_percent": 22, "omnivamp": 10}},
+        {"count": 4, "effect": "+33% AD, 15% Omnivamp", "stats": {"ad_percent": 33, "omnivamp": 15}},
+        {"count": 6, "effect": "+44% AD, 20% Omnivamp", "stats": {"ad_percent": 44, "omnivamp": 20}}
+      ],
+      "champions": ["briar", "qiyana", "yasuo", "renekton", "yone", "warwick", "tryndamere"]
+    },
+    {
+      "id": "vanquisher",
+      "name": "Vanquisher",
+      "type": "class",
+      "description": "Gain Crit Chance. Abilities can critically strike.",
+      "breakpoints": [
+        {"count": 2, "effect": "+20% Crit Chance, abilities can crit", "stats": {"crit_chance": 20}},
+        {"count": 3, "effect": "+35% Crit Chance", "stats": {"crit_chance": 35}},
+        {"count": 4, "effect": "+50% Crit Chance", "stats": {"crit_chance": 50}},
+        {"count": 5, "effect": "+70% Crit Chance, bonus crit damage", "stats": {"crit_chance": 70}}
+      ],
+      "champions": ["xin_zhao", "loris", "kalista"]
+    },
+    {
+      "id": "warden",
+      "name": "Warden",
+      "type": "class",
+      "description": "Wardens gain a shield when they fall below a health threshold.",
+      "breakpoints": [
+        {"count": 2, "effect": "Shield at low health (small)", "stats": {}},
+        {"count": 3, "effect": "Shield at low health (medium)", "stats": {}},
+        {"count": 4, "effect": "Shield at low health (large)", "stats": {}},
+        {"count": 5, "effect": "Shield at low health (massive)", "stats": {}}
+      ],
+      "champions": ["jarvan_iv", "nautilus", "braum", "yorick", "thresh"]
+    },
+    {
+      "id": "huntress",
+      "name": "Huntress",
+      "type": "class",
+      "description": "Huntresses leap to low HP enemies and deal bonus damage.",
+      "breakpoints": [
+        {"count": 2, "effect": "Leap to low HP enemies", "stats": {}},
+        {"count": 3, "effect": "Increased leap damage", "stats": {}}
+      ],
+      "champions": ["neeko", "nidalee"]
+    },
+    {
+      "id": "ascendant",
+      "name": "Ascendant",
+      "type": "class",
+      "description": "Charms appear in shop. Buy charms to enhance your team.",
+      "breakpoints": [
+        {"count": 1, "effect": "Charms appear in shop", "stats": {}}
+      ],
+      "champions": []
+    },
+    {
+      "id": "blacksmith",
+      "name": "Blacksmith",
+      "type": "class",
+      "description": "Ornn forges artifact items. Equipped items grant massive health scaling.",
+      "breakpoints": [
+        {"count": 1, "effect": "Forge artifacts after combat", "stats": {}}
+      ],
+      "champions": ["ornn"]
+    },
+    {
+      "id": "caretaker",
+      "name": "Caretaker",
+      "type": "class",
+      "description": "Win: Gain random Runeterra unit. Lose: Gain free rerolls.",
+      "breakpoints": [
+        {"count": 1, "effect": "Win/Lose rewards", "stats": {}}
+      ],
+      "champions": ["bard"]
+    },
+    {
+      "id": "chainbreaker",
+      "name": "Chainbreaker",
+      "type": "class",
+      "description": "Sylas rotates between 3 different abilities intelligently.",
+      "breakpoints": [
+        {"count": 1, "effect": "Rotating abilities", "stats": {}}
+      ],
+      "champions": ["sylas"]
+    },
+    {
+      "id": "chronokeeper",
+      "name": "Chronokeeper",
+      "type": "class",
+      "description": "Every 2 casts stores 1 XP. Grants damage amp at level 10.",
+      "breakpoints": [
+        {"count": 1, "effect": "Store XP on casts", "stats": {}}
+      ],
+      "champions": ["zilean"]
+    },
+    {
+      "id": "dark_child",
+      "name": "Dark Child",
+      "type": "class",
+      "description": "Annie summons Tibbers as a separate unit on the bench.",
+      "breakpoints": [
+        {"count": 1, "effect": "Tibbers companion", "stats": {}}
+      ],
+      "champions": ["annie"]
+    },
+    {
+      "id": "dragonborn",
+      "name": "Dragonborn",
+      "type": "class",
+      "description": "Shyvana transforms and reduces ability damage taken by allies.",
+      "breakpoints": [
+        {"count": 1, "effect": "Dragon transformation", "stats": {}}
+      ],
+      "champions": ["shyvana"]
+    },
+    {
+      "id": "emperor",
+      "name": "Emperor",
+      "type": "class",
+      "description": "Azir deploys two Guards on the battlefield.",
+      "breakpoints": [
+        {"count": 1, "effect": "Deploy Guards", "stats": {}}
+      ],
+      "champions": ["azir"]
+    },
+    {
+      "id": "glutton",
+      "name": "Glutton",
+      "type": "class",
+      "description": "Feed champions to Tahm Kench for permanent stat bonuses.",
+      "breakpoints": [
+        {"count": 1, "effect": "Feed champions for stats", "stats": {}}
+      ],
+      "champions": ["tahm_kench"]
+    },
+    {
+      "id": "harvester",
+      "name": "Harvester",
+      "type": "class",
+      "description": "Enemies lose resistances. Gain mana on champion kills.",
+      "breakpoints": [
+        {"count": 1, "effect": "Resistance shred, mana on kill", "stats": {}}
+      ],
+      "champions": ["viego"]
+    },
+    {
+      "id": "heroic",
+      "name": "Heroic",
+      "type": "class",
+      "description": "Galio's unique heroic trait.",
+      "breakpoints": [
+        {"count": 1, "effect": "Heroic enhancement", "stats": {}}
+      ],
+      "champions": ["galio"]
+    },
+    {
+      "id": "hexmech",
+      "name": "HexMech",
+      "type": "class",
+      "description": "T-Hex gains bonuses based on piloted role and star level.",
+      "breakpoints": [
+        {"count": 1, "effect": "Piloted bonuses", "stats": {}}
+      ],
+      "champions": ["t_hex"]
+    },
+    {
+      "id": "riftscourge",
+      "name": "Riftscourge",
+      "type": "class",
+      "description": "Bel'Veth and Baron Nashor's unique void predator trait.",
+      "breakpoints": [
+        {"count": 1, "effect": "Rift enhancement", "stats": {}}
+      ],
+      "champions": ["belveth", "baron_nashor"]
+    },
+    {
+      "id": "soulbound",
+      "name": "Soulbound",
+      "type": "class",
+      "description": "Lucian and Senna swap, granting team damage reduction or amp.",
+      "breakpoints": [
+        {"count": 1, "effect": "Soul swap mechanic", "stats": {}}
+      ],
+      "champions": ["lucian_senna"]
+    },
+    {
+      "id": "star_forger",
+      "name": "Star Forger",
+      "type": "class",
+      "description": "Aurelion Sol's unique cosmic trait.",
+      "breakpoints": [
+        {"count": 1, "effect": "Cosmic powers", "stats": {}}
+      ],
+      "champions": ["aurelion_sol"]
+    },
+    {
+      "id": "world_ender",
+      "name": "World Ender",
+      "type": "class",
+      "description": "Aatrox gains AD from omnivamp and resurrects with improved durability.",
+      "breakpoints": [
+        {"count": 1, "effect": "Resurrection, AD scaling", "stats": {}}
+      ],
+      "champions": ["aatrox"]
+    },
+    {
+      "id": "assimilator",
+      "name": "Assimilator",
+      "type": "class",
+      "description": "Kai'Sa switches abilities based on AD vs AP.",
+      "breakpoints": [
+        {"count": 1, "effect": "Adaptive abilities", "stats": {}}
+      ],
+      "champions": ["kaisa"]
+    }
+  ]
+}

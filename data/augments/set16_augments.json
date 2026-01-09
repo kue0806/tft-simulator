@@ -1,0 +1,1766 @@
+{
+  "set": 16,
+  "name": "Lore & Legends",
+  "total_augments": 350,
+  "augments": {
+    "silver": [
+      {
+        "id": "air_axiom",
+        "name": "Air Axiom",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Gain an Air Hex. Champions within gain 20% Attack Speed and their damage Sunders enemies by 30% for 5 seconds."
+      },
+      {
+        "id": "artillery_barrage",
+        "name": "Artillery Barrage",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain a Rumble with enhanced range and missile attacks."
+      },
+      {
+        "id": "augmented_power",
+        "name": "Augmented Power",
+        "tier": "silver",
+        "category": "utility",
+        "effect": "Your next augment is one tier higher."
+      },
+      {
+        "id": "backup_bows",
+        "name": "Backup Bows",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain Recurve Bows after team attacks reach certain thresholds."
+      },
+      {
+        "id": "band_of_thieves_1",
+        "name": "Band of Thieves I",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain 1 Thief's Gloves."
+      },
+      {
+        "id": "best_friends_1",
+        "name": "Best Friends I",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Paired allies gain Attack Speed and Armor."
+      },
+      {
+        "id": "big_friend_1",
+        "name": "Big Friend I",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "High-Health allies gain Durability bonus."
+      },
+      {
+        "id": "boxing_lessons",
+        "name": "Boxing Lessons",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Your team gains Health per front-row ally."
+      },
+      {
+        "id": "branching_out",
+        "name": "Branching Out",
+        "tier": "silver",
+        "category": "trait",
+        "effect": "Gain a random Emblem."
+      },
+      {
+        "id": "called_shot",
+        "name": "Called Shot",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Set your win streak to 4 and gain gold."
+      },
+      {
+        "id": "caretakers_ally",
+        "name": "Caretaker's Ally",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain the same 2-cost champion each time you level."
+      },
+      {
+        "id": "carve_a_path",
+        "name": "Carve a Path",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain a B.F. Sword. Gain more after reaching damage thresholds."
+      },
+      {
+        "id": "celestial_blessing_1",
+        "name": "Celestial Blessing I",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Your team gains Omnivamp with shield conversion."
+      },
+      {
+        "id": "chaotic_evolution",
+        "name": "Chaotic Evolution",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Star-ups grant random stat bonuses."
+      },
+      {
+        "id": "component_buffet",
+        "name": "Component Buffet",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Get component anvils instead of components."
+      },
+      {
+        "id": "continuous_conjuration",
+        "name": "Continuous Conjuration",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain Needlessly Large Rods after dealing magic damage thresholds."
+      },
+      {
+        "id": "crafted_crafting",
+        "name": "Crafted Crafting",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Gain rerolls when crafting completed items."
+      },
+      {
+        "id": "critical_success",
+        "name": "Critical Success",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain Sparring Gloves. Gain more after landing critical strikes."
+      },
+      {
+        "id": "corrosion",
+        "name": "Corrosion",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Enemy front rows lose Armor and Magic Resist."
+      },
+      {
+        "id": "earth_axiom",
+        "name": "Earth Axiom",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Gain an Earth Hex. Champions within gain Armor and can Stun enemies."
+      },
+      {
+        "id": "efficient_shopper",
+        "name": "Efficient Shopper",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Duplicate champions from the next 4 carousels."
+      },
+      {
+        "id": "exiles_1",
+        "name": "Exiles I",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Isolated champions gain a max Health shield."
+      },
+      {
+        "id": "eye_for_an_eye",
+        "name": "Eye For An Eye",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain components when allies die (max 3)."
+      },
+      {
+        "id": "fire_axiom",
+        "name": "Fire Axiom",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Gain a Fire Hex. Champions within gain Attack Damage, Ability Power, and apply Burn/Wound."
+      },
+      {
+        "id": "firesale",
+        "name": "Firesale",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Steal random champions from the shop each round."
+      },
+      {
+        "id": "flexible",
+        "name": "Flexible",
+        "tier": "silver",
+        "category": "trait",
+        "effect": "Gain random Emblems with Health bonus."
+      },
+      {
+        "id": "flowing_tears",
+        "name": "Flowing Tears",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain Tear of the Goddess. Gain more after spending Mana thresholds."
+      },
+      {
+        "id": "focused_fire",
+        "name": "Focused Fire",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Your team gains stacking Attack Damage."
+      },
+      {
+        "id": "good_for_something_1",
+        "name": "Good For Something I",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Itemless champions drop gold on death."
+      },
+      {
+        "id": "healing_orbs_1",
+        "name": "Healing Orbs I",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Nearest ally is healed when an enemy dies."
+      },
+      {
+        "id": "iron_assets",
+        "name": "Iron Assets",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain a component anvil and gold."
+      },
+      {
+        "id": "item_grab_bag",
+        "name": "Item Grab Bag",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain 1 random completed item."
+      },
+      {
+        "id": "leap_of_faith",
+        "name": "Leap of Faith",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain an Illaoi with Fighter conversion and slam ability."
+      },
+      {
+        "id": "lineup",
+        "name": "Lineup",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Your team gains Armor and Magic Resist per front-row ally."
+      },
+      {
+        "id": "lunch_money",
+        "name": "Lunch Money",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Convert damage dealt to enemy tacticians into gold."
+      },
+      {
+        "id": "makeshift_armor_1",
+        "name": "Makeshift Armor I",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Itemless allies gain Armor and Magic Resist."
+      },
+      {
+        "id": "missed_connections",
+        "name": "Missed Connections",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain a copy of each 1-cost champion."
+      },
+      {
+        "id": "on_a_roll",
+        "name": "On a Roll",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Gain rerolls when starring up fielded champions."
+      },
+      {
+        "id": "one_two_five",
+        "name": "One, Two, Five!",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain various cost champions and a component."
+      },
+      {
+        "id": "ones_twos_three",
+        "name": "Ones Twos Three",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain 1-cost, 2-cost, and 3-cost champions."
+      },
+      {
+        "id": "over_encumbered",
+        "name": "Over Encumbered",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Limited bench slots, gain components after rounds."
+      },
+      {
+        "id": "pandoras_bench",
+        "name": "Pandora's Bench",
+        "tier": "silver",
+        "category": "utility",
+        "effect": "Bench champions transform into random champions each round."
+      },
+      {
+        "id": "pandoras_items",
+        "name": "Pandora's Items",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Bench items randomize each round."
+      },
+      {
+        "id": "patience_is_a_virtue",
+        "name": "Patience is a Virtue",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Gain free rerolls if you don't purchase a champion."
+      },
+      {
+        "id": "placebo",
+        "name": "Placebo",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Your team gains Attack Speed and you gain gold."
+      },
+      {
+        "id": "preparation_1",
+        "name": "Preparation I",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Bench champions gain stacking bonuses."
+      },
+      {
+        "id": "recombobulator",
+        "name": "Recombobulator",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Board champions upgrade to a higher cost tier."
+      },
+      {
+        "id": "restart_mission",
+        "name": "Restart Mission",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Replace your board and bench with 2-star champions."
+      },
+      {
+        "id": "risky_moves",
+        "name": "Risky Moves",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Lose Health but gain gold after player combats."
+      },
+      {
+        "id": "rolling_for_days_1",
+        "name": "Rolling For Days I",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Gain 10 free Shop rerolls."
+      },
+      {
+        "id": "second_wind",
+        "name": "Second Wind",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Your team heals missing Health after 10 seconds of combat."
+      },
+      {
+        "id": "silver_destiny",
+        "name": "Silver Destiny",
+        "tier": "silver",
+        "category": "utility",
+        "effect": "Gain a random Silver Augment and gold."
+      },
+      {
+        "id": "silver_spoon",
+        "name": "Silver Spoon",
+        "tier": "silver",
+        "category": "leveling",
+        "effect": "Gain 10 XP."
+      },
+      {
+        "id": "slightly_magic_roll",
+        "name": "Slightly Magic Roll",
+        "tier": "silver",
+        "category": "utility",
+        "effect": "Roll a die and receive rewards based on the result."
+      },
+      {
+        "id": "small_grab_bag",
+        "name": "Small Grab Bag",
+        "tier": "silver",
+        "category": "item",
+        "effect": "Gain 2 random item components."
+      },
+      {
+        "id": "slice_of_life",
+        "name": "Slice of Life",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain random champions, cost increases per stage."
+      },
+      {
+        "id": "spoils_of_war_1",
+        "name": "Spoils of War I",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Enemies have a 25% chance to drop loot when killed."
+      },
+      {
+        "id": "stand_united",
+        "name": "Stand United",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Your team gains Attack Damage and Ability Power per active trait."
+      },
+      {
+        "id": "table_scraps",
+        "name": "Table Scraps",
+        "tier": "silver",
+        "category": "economy",
+        "effect": "Gain unclaimed carousel champions and their items."
+      },
+      {
+        "id": "team_building",
+        "name": "Team Building",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain a Lesser Champion Duplicator. Gain another after combats."
+      },
+      {
+        "id": "teaming_up",
+        "name": "Teaming Up",
+        "tier": "silver",
+        "category": "champion",
+        "effect": "Gain a component and 3-cost champions."
+      },
+      {
+        "id": "titanic_titan",
+        "name": "Titanic Titan",
+        "tier": "silver",
+        "category": "utility",
+        "effect": "Increase your player Health and gain carousel pick advantage."
+      },
+      {
+        "id": "twin_guardians",
+        "name": "Twin Guardians",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "A front-row pair grants Armor and Magic Resist to your team."
+      },
+      {
+        "id": "water_axiom",
+        "name": "Water Axiom",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Gain a Water Hex. Champions within gain Mana Regen and Shred enemies."
+      },
+      {
+        "id": "wood_axiom",
+        "name": "Wood Axiom",
+        "tier": "silver",
+        "category": "combat",
+        "effect": "Gain a Wood Hex. Champions within gain Health and permanent Health on takedowns."
+      }
+    ],
+    "gold": [
+      {
+        "id": "three_threes",
+        "name": "3 Threes",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain 2-star 3-cost champions and gold."
+      },
+      {
+        "id": "a_magic_roll",
+        "name": "A Magic Roll",
+        "tier": "gold",
+        "category": "utility",
+        "effect": "Roll 3 dice for tier-based rewards."
+      },
+      {
+        "id": "advanced_loan",
+        "name": "Advanced Loan",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain 20 gold. Your next augment is one tier lower."
+      },
+      {
+        "id": "arcane_viktor_y",
+        "name": "Arcane Viktor-y",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "After 8 seconds of combat, stun the enemy team for 1.5 seconds. Repeat after 20 seconds."
+      },
+      {
+        "id": "ascension",
+        "name": "Ascension",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Gain Damage Amp after a combat delay."
+      },
+      {
+        "id": "aura_farming",
+        "name": "Aura Farming",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a 2-star 5-cost champion (unavailable until 4-3)."
+      },
+      {
+        "id": "best_friends_2",
+        "name": "Best Friends II",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Isolated pairs gain stronger Attack Speed and Armor bonuses."
+      },
+      {
+        "id": "big_grab_bag",
+        "name": "Big Grab Bag",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain components, gold, and a Reforger."
+      },
+      {
+        "id": "birthday_reunion",
+        "name": "Birthday Reunion",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a 2-cost now, Thief's Gloves at level 6, and a 5-cost at level 9."
+      },
+      {
+        "id": "blood_offering",
+        "name": "Blood Offering",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Bloodthirster. Allies gain a shield but lose Health."
+      },
+      {
+        "id": "bodyguard_training",
+        "name": "Bodyguard Training",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains Armor and Magic Resist per level."
+      },
+      {
+        "id": "branching_out_plus",
+        "name": "Branching Out+",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Gain a random Emblem (enhanced version)."
+      },
+      {
+        "id": "bringer_of_ruin",
+        "name": "Bringer of Ruin",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain Atakhan who gains stacking bonuses per takedown."
+      },
+      {
+        "id": "bronze_for_life_1",
+        "name": "Bronze For Life I",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains Damage Amp per Bronze trait."
+      },
+      {
+        "id": "calculated_loss",
+        "name": "Calculated Loss",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain gold and a reroll after each loss."
+      },
+      {
+        "id": "care_package",
+        "name": "Care Package",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Receive care packages at the start of each stage."
+      },
+      {
+        "id": "celestial_blessing_2",
+        "name": "Celestial Blessing II",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains stronger Omnivamp and shields."
+      },
+      {
+        "id": "chaos_magic",
+        "name": "Chaos Magic",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Arcanists gain Mana Regen and trigger magical effects."
+      },
+      {
+        "id": "clear_mind",
+        "name": "Clear Mind",
+        "tier": "gold",
+        "category": "leveling",
+        "effect": "Gain XP if your bench is empty after player combat."
+      },
+      {
+        "id": "cluttered_mind",
+        "name": "Cluttered Mind",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain 1-cost champions. Gain XP if your bench is full."
+      },
+      {
+        "id": "comeback_story",
+        "name": "Comeback Story",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team scales based on your missing player Health."
+      },
+      {
+        "id": "commerce_core",
+        "name": "Commerce Core",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain free rerolls now and every round."
+      },
+      {
+        "id": "corona",
+        "name": "Corona",
+        "tier": "gold",
+        "category": "utility",
+        "effect": "Gain a Tactician's Crown with enhanced bonuses."
+      },
+      {
+        "id": "crowns_will",
+        "name": "Crown's Will",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Needlessly Large Rod. Your team gains stats."
+      },
+      {
+        "id": "cry_me_a_river",
+        "name": "Cry Me A River",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Tear of the Goddess with Mana Regen bonus."
+      },
+      {
+        "id": "darkwills_invasion",
+        "name": "Darkwill's Invasion",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Your team gains Damage Amp (stronger with Noxus champions)."
+      },
+      {
+        "id": "deadlier_blades",
+        "name": "Deadlier Blades",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Deathblade with stacking Attack Damage."
+      },
+      {
+        "id": "deadlier_caps",
+        "name": "Deadlier Caps",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Rabadon's Deathcap with stacking Ability Power."
+      },
+      {
+        "id": "defense_of_the_placidium",
+        "name": "Defense of the Placidium",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Your team gains Durability (stronger with Ionia champions)."
+      },
+      {
+        "id": "delayed_start",
+        "name": "Delayed Start",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Replace your board with 2-star champions. Shop is disabled temporarily."
+      },
+      {
+        "id": "demacia_forever",
+        "name": "Demacia Forever",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Demacian champions gain stacking bonuses per rally."
+      },
+      {
+        "id": "double_trouble",
+        "name": "Double Trouble",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Dual champions gain bonuses. Gain reward when 3-starring them."
+      },
+      {
+        "id": "duo_queue",
+        "name": "Duo Queue",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain 2 random 5-cost champions and components."
+      },
+      {
+        "id": "early_learnings",
+        "name": "Early Learnings",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains stacking Attack Damage and Ability Power."
+      },
+      {
+        "id": "epic_rolldown",
+        "name": "Epic Rolldown",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain many rerolls when you reach level 8."
+      },
+      {
+        "id": "epoch",
+        "name": "Epoch",
+        "tier": "gold",
+        "category": "leveling",
+        "effect": "Gain XP and rerolls now and at the start of each stage."
+      },
+      {
+        "id": "epoch_plus",
+        "name": "Epoch+",
+        "tier": "gold",
+        "category": "leveling",
+        "effect": "Enhanced Epoch with more XP and rerolls."
+      },
+      {
+        "id": "evolve_and_overcome",
+        "name": "Evolve and Overcome",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Gain XP per Mutated Void takedowns."
+      },
+      {
+        "id": "exclusive_customization",
+        "name": "Exclusive Customization",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain a Lucky Item Chest and tools."
+      },
+      {
+        "id": "exiles_2",
+        "name": "Exiles II",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Isolated champions gain a stronger max Health shield."
+      },
+      {
+        "id": "explosive_growth",
+        "name": "Explosive Growth",
+        "tier": "gold",
+        "category": "leveling",
+        "effect": "Gain XP now and at the start of each round."
+      },
+      {
+        "id": "explosive_growth_plus",
+        "name": "Explosive Growth+",
+        "tier": "gold",
+        "category": "leveling",
+        "effect": "Enhanced Explosive Growth with more XP."
+      },
+      {
+        "id": "feed_the_flames",
+        "name": "Feed the Flames",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Sunfire Cape. Gain Omnivamp against Burning enemies."
+      },
+      {
+        "id": "find_your_center",
+        "name": "Find Your Center",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your center front-row champion gains significant bonuses."
+      },
+      {
+        "id": "forward_thinking",
+        "name": "Forward Thinking",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Lose gold now, regain it with a bonus after several combats."
+      },
+      {
+        "id": "gain_21_gold",
+        "name": "Gain 21 Gold",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain 21 gold immediately."
+      },
+      {
+        "id": "golemify",
+        "name": "Golemify",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Lose all champions. Gain a Golem with combined stats from your board."
+      },
+      {
+        "id": "gold_destiny",
+        "name": "Gold Destiny",
+        "tier": "gold",
+        "category": "utility",
+        "effect": "Gain a random Gold Augment and gold."
+      },
+      {
+        "id": "gold_destiny_plus",
+        "name": "Gold Destiny+",
+        "tier": "gold",
+        "category": "utility",
+        "effect": "Gain a random Gold Augment and more gold."
+      },
+      {
+        "id": "hard_bargain",
+        "name": "Hard Bargain",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Skip your carousel choice. Gain Health and gold."
+      },
+      {
+        "id": "healing_orbs_2",
+        "name": "Healing Orbs II",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Stronger healing to nearest ally when enemies die."
+      },
+      {
+        "id": "heart_of_steel",
+        "name": "Heart of Steel",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Steadfast Heart with stacking Health."
+      },
+      {
+        "id": "heavy_is_the_crown",
+        "name": "Heavy Is the Crown",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Crown of Demacia. Lose the round if you lose with it."
+      },
+      {
+        "id": "hefty_rolls",
+        "name": "Hefty Rolls",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains Health and size based on rerolls."
+      },
+      {
+        "id": "heroic_grab_bag",
+        "name": "Heroic Grab Bag",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain Lesser Champion Duplicators and gold."
+      },
+      {
+        "id": "hexgate_travel",
+        "name": "Hexgate Travel",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Gain Piltover champions when inventions trigger."
+      },
+      {
+        "id": "high_voltage",
+        "name": "High Voltage",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Ionic Spark with extended radius."
+      },
+      {
+        "id": "hustler",
+        "name": "Hustler",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain gold and XP per combat. No interest gain."
+      },
+      {
+        "id": "indecision_1",
+        "name": "Indecision I",
+        "tier": "gold",
+        "category": "utility",
+        "effect": "Choose a new Gold Augment after 3 rounds."
+      },
+      {
+        "id": "indiscriminate_killer",
+        "name": "Indiscriminate Killer",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Giant Slayer with Damage Amp against all enemies."
+      },
+      {
+        "id": "infinity_protection",
+        "name": "Infinity Protection",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain gold now and Infinity Force at a later stage."
+      },
+      {
+        "id": "ixtal_expeditionist",
+        "name": "Ixtal Expeditionist",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Gain Ixtal champions and increase player Health."
+      },
+      {
+        "id": "jeweled_lotus_1",
+        "name": "Jeweled Lotus I",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains Critical Strike Chance."
+      },
+      {
+        "id": "know_your_enemy",
+        "name": "Know Your Enemy",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "See your opponent and gain Damage Amp against them."
+      },
+      {
+        "id": "last_second_save",
+        "name": "Last Second Save",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Allies restore Health when falling below a threshold."
+      },
+      {
+        "id": "late_game_scaling",
+        "name": "Late Game Scaling",
+        "tier": "gold",
+        "category": "leveling",
+        "effect": "Gain XP per round. 5-cost champions gain bonuses."
+      },
+      {
+        "id": "legion_of_threes",
+        "name": "Legion of Threes",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Gain an Emblem. 3-cost champions and Emblem holders gain stats."
+      },
+      {
+        "id": "lifting_competition",
+        "name": "Lifting Competition",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Bruisers gain rewards per Health threshold."
+      },
+      {
+        "id": "little_buddies",
+        "name": "Little Buddies",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "High-cost champions gain bonuses per low-cost ally."
+      },
+      {
+        "id": "makeshift_armor_2",
+        "name": "Makeshift Armor II",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Itemless allies gain stronger Armor and Magic Resist."
+      },
+      {
+        "id": "malicious_monetization",
+        "name": "Malicious Monetization",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain gold. Enemies drop gold when killed."
+      },
+      {
+        "id": "max_build",
+        "name": "Max Build",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain Champion Duplicator and rerolls. Repeat at each stage."
+      },
+      {
+        "id": "mess_hall",
+        "name": "Mess Hall",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains Attack Speed and projectile attacks."
+      },
+      {
+        "id": "maces_will",
+        "name": "Mace's Will",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Sparring Gloves. Your team gains Attack Speed and crits."
+      },
+      {
+        "id": "no_scout_no_pivot",
+        "name": "NO SCOUT NO PIVOT",
+        "tier": "gold",
+        "category": "utility",
+        "effect": "Fielded champions can't be benched. Your team gains stats."
+      },
+      {
+        "id": "patient_study",
+        "name": "Patient Study",
+        "tier": "gold",
+        "category": "leveling",
+        "effect": "Gain XP based on your combat result."
+      },
+      {
+        "id": "pair_of_fours",
+        "name": "Pair of Fours",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Dual 4-cost champions gain significant bonuses."
+      },
+      {
+        "id": "pandoras_items_2",
+        "name": "Pandora's Items II",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Bench items randomize each round. Gain components."
+      },
+      {
+        "id": "pilfer",
+        "name": "Pilfer",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a copy of the first champion you kill. Earn Thief's Gloves."
+      },
+      {
+        "id": "plot_armor",
+        "name": "Plot Armor",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains Armor and Magic Resist, increased when low HP."
+      },
+      {
+        "id": "poison_pals",
+        "name": "Poison Pals",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain Singed and Teemo with synergy mechanics."
+      },
+      {
+        "id": "portable_forge",
+        "name": "Portable Forge",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Choose 1 of 4 Artifacts."
+      },
+      {
+        "id": "precision_and_grace",
+        "name": "Precision and Grace",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team dashes and gains Attack Speed on takedown."
+      },
+      {
+        "id": "preparation_2",
+        "name": "Preparation II",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Bench champions gain stronger stacking bonuses."
+      },
+      {
+        "id": "prizefighter",
+        "name": "Prizefighter",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain components. Gain more per win."
+      },
+      {
+        "id": "promised_protection",
+        "name": "Promised Protection",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Protector's Vow with Mana benefits."
+      },
+      {
+        "id": "pyromaniac",
+        "name": "Pyromaniac",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Red Buff. Burns deal more damage."
+      },
+      {
+        "id": "raining_gold",
+        "name": "Raining Gold",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain gold now and each round."
+      },
+      {
+        "id": "reinforcement",
+        "name": "ReinFOURcement",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Your next 4-cost purchase is instantly 2-star."
+      },
+      {
+        "id": "replication",
+        "name": "Replication",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Choose a component. Gain copies for 2 rounds."
+      },
+      {
+        "id": "salvage_bin",
+        "name": "Salvage Bin",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain an item now, a component later. Break items when selling."
+      },
+      {
+        "id": "savings_account",
+        "name": "Savings Account",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain gold when reaching interest thresholds."
+      },
+      {
+        "id": "seraphims_staff",
+        "name": "Seraphim's Staff",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Archangel's Staff with Mana bonus."
+      },
+      {
+        "id": "silcos_revenge",
+        "name": "Silco's Revenge",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Zaunite champions explode on death. Gain champions."
+      },
+      {
+        "id": "slammin",
+        "name": "Slammin'",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain a component. Gain XP if your bench has no items."
+      },
+      {
+        "id": "solo_leveling",
+        "name": "Solo Leveling",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Field a single champion with massive stats for several combats."
+      },
+      {
+        "id": "solo_plate",
+        "name": "Solo Plate",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Gargoyle Stoneplate with solo row bonus."
+      },
+      {
+        "id": "spears_will",
+        "name": "Spear's Will",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Your team gains Attack Damage and Mana. Gain a B.F. Sword."
+      },
+      {
+        "id": "speedy_double_kill",
+        "name": "Speedy Double Kill",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Guinsoo's Rageblade. Gain gold when eliminations occur."
+      },
+      {
+        "id": "spirit_link",
+        "name": "Spirit Link",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team heals based on your player Health gap."
+      },
+      {
+        "id": "spirit_of_redemption",
+        "name": "Spirit of Redemption",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Spirit Visage with area healing."
+      },
+      {
+        "id": "spoils_of_war_2",
+        "name": "Spoils of War II",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Enemies have a 30% chance to drop loot when killed."
+      },
+      {
+        "id": "spreading_roots",
+        "name": "Spreading Roots",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "Gain random Emblems and gold."
+      },
+      {
+        "id": "staffsmith",
+        "name": "Staffsmith",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain completed items from Needlessly Large Rod."
+      },
+      {
+        "id": "stars_are_born",
+        "name": "Stars Are Born",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Your first 1-cost and 2-cost purchases are instantly 2-star."
+      },
+      {
+        "id": "starter_kit",
+        "name": "Starter Kit",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a 4-cost and a matching trait 2-cost champion."
+      },
+      {
+        "id": "swordsmith",
+        "name": "Swordsmith",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain completed items from B.F. Sword."
+      },
+      {
+        "id": "the_golden_dragon",
+        "name": "The Golden Dragon",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Mogul's Mail with oversized benefits."
+      },
+      {
+        "id": "the_ruined_king",
+        "name": "The Ruined King",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a 2-star Viego with Shadow Isles synergy."
+      },
+      {
+        "id": "tons_of_stats",
+        "name": "Tons of Stats!",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains comprehensive stat bonuses."
+      },
+      {
+        "id": "trade_sector",
+        "name": "Trade Sector",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain a free reroll each round and gold."
+      },
+      {
+        "id": "treasure_hunt",
+        "name": "Treasure Hunt",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Unlock staged chests by spending gold on rerolls."
+      },
+      {
+        "id": "trials_of_twilight",
+        "name": "Trials of Twilight",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain Xin Zhao. Unlock Zaahen at 3-star."
+      },
+      {
+        "id": "trifecta_1",
+        "name": "Trifecta I",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain 3-cost champions with combat bonuses."
+      },
+      {
+        "id": "two_much_value",
+        "name": "Two Much Value",
+        "tier": "gold",
+        "category": "economy",
+        "effect": "Gain rerolls per fielded 2-cost champion."
+      },
+      {
+        "id": "two_trick",
+        "name": "Two Trick",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a 2-star 2-cost and 1-cost champions."
+      },
+      {
+        "id": "urf",
+        "name": "U.R.F",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Spatula. Spatula/Frying Pan holders gain bonuses."
+      },
+      {
+        "id": "unsealed_from_steel",
+        "name": "Unsealed From Steel",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Choose 1 of 4 Darkin Weapons."
+      },
+      {
+        "id": "urfs_gambit",
+        "name": "Urf's Gambit",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain Spatula or Frying Pan based on next combat result."
+      },
+      {
+        "id": "walk_the_true_path_1",
+        "name": "Walk The True Path I",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain Duplicators and champions. Ionia champions are upgraded."
+      },
+      {
+        "id": "warlords_honor",
+        "name": "Warlord's Honor",
+        "tier": "gold",
+        "category": "combat",
+        "effect": "Your team gains stacking Attack Damage and Ability Power."
+      },
+      {
+        "id": "warpath",
+        "name": "Warpath",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a 2-star 2-cost. Gain a high-cost champion after dealing damage."
+      },
+      {
+        "id": "wild_growth",
+        "name": "Wild Growth",
+        "tier": "gold",
+        "category": "trait",
+        "effect": "3-star Yordles become massive with bonuses."
+      },
+      {
+        "id": "woven_magic",
+        "name": "Woven Magic",
+        "tier": "gold",
+        "category": "item",
+        "effect": "Gain a component. Gain more per Mana spent."
+      },
+      {
+        "id": "worth_the_wait",
+        "name": "Worth the Wait",
+        "tier": "gold",
+        "category": "champion",
+        "effect": "Gain a champion now. Gain copies each round afterward."
+      }
+    ],
+    "prismatic": [
+      {
+        "id": "band_of_thieves_2",
+        "name": "Band of Thieves II",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain 2 Thief's Gloves. Gain another after combats."
+      },
+      {
+        "id": "belt_overflow",
+        "name": "Belt Overflow",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Giant's Belts with bonus Health."
+      },
+      {
+        "id": "binary_airdrop",
+        "name": "Binary Airdrop",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Armed champions gain random items. Gain components."
+      },
+      {
+        "id": "birthday_present",
+        "name": "Birthday Present",
+        "tier": "prismatic",
+        "category": "champion",
+        "effect": "Gain a 2-star champion when you level up."
+      },
+      {
+        "id": "bronze_for_life_2",
+        "name": "Bronze For Life II",
+        "tier": "prismatic",
+        "category": "combat",
+        "effect": "Your team gains Damage Amp and Durability per Bronze trait."
+      },
+      {
+        "id": "buried_treasures",
+        "name": "Buried Treasures",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain a component now and at the start of each round."
+      },
+      {
+        "id": "call_to_chaos",
+        "name": "Call to Chaos",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Gain a powerful random reward."
+      },
+      {
+        "id": "celestial_blessing_3",
+        "name": "Celestial Blessing III",
+        "tier": "prismatic",
+        "category": "combat",
+        "effect": "Your team gains maximum Omnivamp and shields."
+      },
+      {
+        "id": "chosen_wolves",
+        "name": "Chosen Wolves",
+        "tier": "prismatic",
+        "category": "champion",
+        "effect": "Gain Ambessa and Kindred with synergy mechanics."
+      },
+      {
+        "id": "component_heist",
+        "name": "Component Heist",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain all components after player combats."
+      },
+      {
+        "id": "construct_a_companion",
+        "name": "Construct a Companion",
+        "tier": "prismatic",
+        "category": "champion",
+        "effect": "Your next 1-cost purchase is instantly 3-star."
+      },
+      {
+        "id": "coronation",
+        "name": "Coronation",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Gain a Tactician's Crown with enhanced bonuses."
+      },
+      {
+        "id": "cursed_crown",
+        "name": "Cursed Crown",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Gain team size but take double damage when you lose."
+      },
+      {
+        "id": "dragonguards",
+        "name": "Dragonguards",
+        "tier": "prismatic",
+        "category": "champion",
+        "effect": "Gain Shyvana and Jarvan with synergy mechanics."
+      },
+      {
+        "id": "expected_unexpectedness",
+        "name": "Expected Unexpectedness",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Roll dice now and at the start of each stage for rewards."
+      },
+      {
+        "id": "flexible_prismatic",
+        "name": "Flexible",
+        "tier": "prismatic",
+        "category": "trait",
+        "effect": "Gain random Emblems with Health bonus per Emblem."
+      },
+      {
+        "id": "forged_in_strength",
+        "name": "Forged in Strength",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Artifacts. Gain more if you drop below a Health threshold."
+      },
+      {
+        "id": "going_long",
+        "name": "Going Long",
+        "tier": "prismatic",
+        "category": "economy",
+        "effect": "No interest gain. Gain gold and XP per round."
+      },
+      {
+        "id": "growth_mindset",
+        "name": "Growth Mindset",
+        "tier": "prismatic",
+        "category": "leveling",
+        "effect": "Gain XP. Reduce XP purchase cost."
+      },
+      {
+        "id": "hard_commit",
+        "name": "Hard Commit",
+        "tier": "prismatic",
+        "category": "trait",
+        "effect": "Gain an Emblem and matching trait champions each stage."
+      },
+      {
+        "id": "hedge_fund",
+        "name": "Hedge Fund",
+        "tier": "prismatic",
+        "category": "economy",
+        "effect": "Gain gold. Increase interest cap."
+      },
+      {
+        "id": "hold_the_line",
+        "name": "Hold the Line",
+        "tier": "prismatic",
+        "category": "combat",
+        "effect": "Back row champions gain bonuses per front-row ally."
+      },
+      {
+        "id": "indecision_2",
+        "name": "Indecision II",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Choose a new augment after 3 rounds. Gain gold."
+      },
+      {
+        "id": "invested_plus",
+        "name": "Invested+",
+        "tier": "prismatic",
+        "category": "economy",
+        "effect": "Gain gold and rerolls per gold above a threshold."
+      },
+      {
+        "id": "jeweled_lotus_2",
+        "name": "Jeweled Lotus II",
+        "tier": "prismatic",
+        "category": "combat",
+        "effect": "Your team gains Critical Strike Chance with bonus damage."
+      },
+      {
+        "id": "just_hit",
+        "name": "Just Hit",
+        "tier": "prismatic",
+        "category": "champion",
+        "effect": "Gain a Duplicator, rerolls, and gold."
+      },
+      {
+        "id": "level_up",
+        "name": "Level Up!",
+        "tier": "prismatic",
+        "category": "leveling",
+        "effect": "Gain extra XP when purchasing XP."
+      },
+      {
+        "id": "living_forge",
+        "name": "Living Forge",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain an Artifact anvil now and periodically."
+      },
+      {
+        "id": "lucky_gloves",
+        "name": "Lucky Gloves",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Thief's Gloves guarantee ideal items."
+      },
+      {
+        "id": "luxury_subscription",
+        "name": "Luxury Subscription",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain a package now and at the start of each stage."
+      },
+      {
+        "id": "min_max",
+        "name": "Min-Max",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Golden Item Remover and components."
+      },
+      {
+        "id": "money_monsoon",
+        "name": "Money Monsoon",
+        "tier": "prismatic",
+        "category": "economy",
+        "effect": "Gain gold every round permanently."
+      },
+      {
+        "id": "nine_lives",
+        "name": "Nine Lives",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Set your Health to 9. Only lose 1 Health when you lose."
+      },
+      {
+        "id": "one_buff_two_buff",
+        "name": "One Buff, Two Buff",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Red Buff, Blue Buff, and a Duplicator."
+      },
+      {
+        "id": "pandoras_items_3",
+        "name": "Pandora's Items III",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Bench items randomize each round. Gain a Radiant item."
+      },
+      {
+        "id": "prismatic_destiny",
+        "name": "Prismatic Destiny",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Gain a random Prismatic Augment and gold."
+      },
+      {
+        "id": "prismatic_ticket",
+        "name": "Prismatic Ticket",
+        "tier": "prismatic",
+        "category": "economy",
+        "effect": "Rerolls have a 50% chance to be free."
+      },
+      {
+        "id": "radiant_rascal",
+        "name": "Radiant Rascal",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Rascal's Gloves with rotating Radiant items."
+      },
+      {
+        "id": "radiant_relics",
+        "name": "Radiant Relics",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Choose 1 of 5 Radiant items. Gain a Remover."
+      },
+      {
+        "id": "retribution",
+        "name": "Retribution",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Hands of Justice with ability crits."
+      },
+      {
+        "id": "shopping_spree",
+        "name": "Shopping Spree",
+        "tier": "prismatic",
+        "category": "economy",
+        "effect": "Gain rerolls per level when leveling up."
+      },
+      {
+        "id": "shimmerscale_essence",
+        "name": "Shimmerscale Essence",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Mogul's Mail. Gain Gamblers Blade later."
+      },
+      {
+        "id": "soul_awakening",
+        "name": "Soul Awakening",
+        "tier": "prismatic",
+        "category": "combat",
+        "effect": "Your team gains stacking bonus damage after combat starts."
+      },
+      {
+        "id": "spoils_of_war_3",
+        "name": "Spoils of War III",
+        "tier": "prismatic",
+        "category": "economy",
+        "effect": "Enemies have a 45% chance to drop loot when killed."
+      },
+      {
+        "id": "sweet_treats",
+        "name": "Sweet Treats",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain an Artifact anvil. Your team gains Health per item."
+      },
+      {
+        "id": "sword_overflow",
+        "name": "Sword Overflow",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain B.F. Swords with Attack Speed bonus."
+      },
+      {
+        "id": "tacticals_kitchen",
+        "name": "Tactical's Kitchen",
+        "tier": "prismatic",
+        "category": "trait",
+        "effect": "Gain an Emblem. Gain Tactician's Cape later."
+      },
+      {
+        "id": "the_axiomata",
+        "name": "The Axiomata",
+        "tier": "prismatic",
+        "category": "combat",
+        "effect": "Gain elemental hex augments and future rewards."
+      },
+      {
+        "id": "the_golden_egg",
+        "name": "The Golden Egg",
+        "tier": "prismatic",
+        "category": "utility",
+        "effect": "Gain an egg that hatches for loot after several turns."
+      },
+      {
+        "id": "the_trait_tree",
+        "name": "The Trait Tree",
+        "tier": "prismatic",
+        "category": "trait",
+        "effect": "Gain Emblems and gold."
+      },
+      {
+        "id": "the_world_runes",
+        "name": "The World Runes",
+        "tier": "prismatic",
+        "category": "trait",
+        "effect": "Gain Region Emblems. Gain reward after reaching trait thresholds."
+      },
+      {
+        "id": "tiny_but_deadly",
+        "name": "Tiny, but Deadly",
+        "tier": "prismatic",
+        "category": "combat",
+        "effect": "Your team becomes small with speed bonuses."
+      },
+      {
+        "id": "trifecta_2",
+        "name": "Trifecta II",
+        "tier": "prismatic",
+        "category": "champion",
+        "effect": "Gain 3-cost champions with Attack Speed and stronger bonuses."
+      },
+      {
+        "id": "upward_mobility",
+        "name": "Upward Mobility",
+        "tier": "prismatic",
+        "category": "leveling",
+        "effect": "Reduce XP cost. Gain bonuses per level."
+      },
+      {
+        "id": "wand_overflow",
+        "name": "Wand Overflow",
+        "tier": "prismatic",
+        "category": "item",
+        "effect": "Gain Needlessly Large Rods with Attack Speed bonus."
+      },
+      {
+        "id": "we_stick_together",
+        "name": "We Stick Together",
+        "tier": "prismatic",
+        "category": "trait",
+        "effect": "Gain an Emblem and anvil. Emblem trait holders gain Attack Speed."
+      },
+      {
+        "id": "win_out",
+        "name": "Win Out",
+        "tier": "prismatic",
+        "category": "leveling",
+        "effect": "When you reach level 9, immediately level to 10. Gain rerolls and XP now."
+      },
+      {
+        "id": "worth_the_wait_2",
+        "name": "Worth the Wait II",
+        "tier": "prismatic",
+        "category": "champion",
+        "effect": "Gain 2-cost champion copies each round permanently."
+      }
+    ]
+  },
+  "categories": {
+    "combat": "Augments that enhance combat stats or abilities",
+    "economy": "Augments that provide gold, interest, or economic advantages",
+    "item": "Augments that provide items or components",
+    "champion": "Augments that provide champions or duplicators",
+    "trait": "Augments that provide emblems or enhance traits",
+    "leveling": "Augments that provide XP or level advantages",
+    "utility": "Other augments with unique effects"
+  },
+  "rules": {
+    "max_economy_per_choice": 2,
+    "augment_rounds": ["2-1", "3-2", "4-2"],
+    "timer_seconds": {
+      "first": 43,
+      "later": 58
+    }
+  }
+}

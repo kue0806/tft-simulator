@@ -1,0 +1,1491 @@
+{
+  "set": 16,
+  "name": "Lore & Legends",
+  "patch": "16.1",
+  "sources": [
+    "https://lolchess.gg/champions",
+    "https://tftset16.com/champions",
+    "https://mobalytics.gg/tft/champions"
+  ],
+  "star_scaling": {
+    "description": "Stats scale by star level: 1-star=100%, 2-star=180%, 3-star=324%",
+    "1_star": 1.0,
+    "2_star": 1.8,
+    "3_star": 3.24
+  },
+  "champions": [
+    {
+      "id": "anivia",
+      "name": "Anivia",
+      "cost": 1,
+      "traits": ["freljord", "invoker"],
+      "stats": {
+        "health": [500, 900, 1620],
+        "mana": [0, 40],
+        "armor": 20,
+        "magic_resist": 20,
+        "attack_damage": [30, 54, 97],
+        "attack_speed": 0.7,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Frostbite",
+        "description": "Fire an ice shard at target that deals magic damage. If they are Chilled, the damage Critically Strikes.",
+        "damage": [325, 455, 650],
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "blitzcrank",
+      "name": "Blitzcrank",
+      "cost": 1,
+      "traits": ["zaun", "juggernaut"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [60, 120],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.55,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Static Field",
+        "description": "Gain Shield for 4 seconds and deal magic damage to all enemies within 1 hex.",
+        "shield": [400, 480, 600],
+        "damage": [56, 84, 126],
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "briar",
+      "name": "Briar",
+      "cost": 1,
+      "traits": ["noxus", "slayer"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 40],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [42, 76, 136],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Blood Frenzy",
+        "description": "Briar enters a frenzy, gaining attack speed and healing on hit.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "caitlyn",
+      "name": "Caitlyn",
+      "cost": 1,
+      "traits": ["piltover", "longshot"],
+      "stats": {
+        "health": [500, 900, 1620],
+        "mana": [0, 80],
+        "armor": 15,
+        "magic_resist": 15,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.75,
+        "attack_range": 5
+      },
+      "ability": {
+        "name": "Ace in the Hole",
+        "description": "Caitlyn takes aim and fires a powerful shot at her target.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "illaoi",
+      "name": "Illaoi",
+      "cost": 1,
+      "traits": ["bilgewater", "bruiser"],
+      "stats": {
+        "health": [550, 990, 1782],
+        "mana": [0, 70],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Tentacle Smash",
+        "description": "Illaoi slams tentacles dealing damage and healing herself.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "jarvan_iv",
+      "name": "Jarvan IV",
+      "cost": 1,
+      "traits": ["demacia", "warden"],
+      "stats": {
+        "health": [600, 1080, 1944],
+        "mana": [0, 60],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Cataclysm",
+        "description": "Jarvan leaps to an enemy and creates an arena around them.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "jhin",
+      "name": "Jhin",
+      "cost": 1,
+      "traits": ["ionia", "longshot"],
+      "stats": {
+        "health": [500, 900, 1620],
+        "mana": [0, 100],
+        "armor": 15,
+        "magic_resist": 15,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.6,
+        "attack_range": 5
+      },
+      "ability": {
+        "name": "Fourth Shot",
+        "description": "Jhin's fourth shot crits and deals bonus damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "kogmaw",
+      "name": "Kog'Maw",
+      "cost": 1,
+      "traits": ["void", "longshot"],
+      "stats": {
+        "health": [550, 990, 1782],
+        "mana": [0, 60],
+        "armor": 20,
+        "magic_resist": 20,
+        "attack_damage": [40, 72, 130],
+        "attack_speed": 0.7,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Living Artillery",
+        "description": "Kog'Maw launches artillery at the highest health enemy.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "lulu",
+      "name": "Lulu",
+      "cost": 1,
+      "traits": ["yordle", "arcanist"],
+      "stats": {
+        "health": [550, 990, 1782],
+        "mana": [0, 60],
+        "armor": 25,
+        "magic_resist": 25,
+        "attack_damage": [35, 63, 113],
+        "attack_speed": 0.75,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Wild Growth",
+        "description": "Lulu polymorphs an enemy and buffs an ally with bonus health.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "qiyana",
+      "name": "Qiyana",
+      "cost": 1,
+      "traits": ["ixtal", "slayer"],
+      "stats": {
+        "health": [550, 990, 1782],
+        "mana": [0, 50],
+        "armor": 25,
+        "magic_resist": 25,
+        "attack_damage": [48, 86, 156],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Elemental Wrath",
+        "description": "Qiyana dashes and slashes enemies with elemental damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "rumble",
+      "name": "Rumble",
+      "cost": 1,
+      "traits": ["yordle", "piltover", "bruiser"],
+      "stats": {
+        "health": [600, 1080, 1944],
+        "mana": [0, 70],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [48, 86, 156],
+        "attack_speed": 0.8,
+        "attack_range": 2
+      },
+      "ability": {
+        "name": "Flamespitter",
+        "description": "Rumble breathes fire in a cone, damaging enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "shen",
+      "name": "Shen",
+      "cost": 1,
+      "traits": ["ionia", "defender"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 80],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Spirit Blade",
+        "description": "Shen creates a zone that blocks incoming attacks.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "sona",
+      "name": "Sona",
+      "cost": 1,
+      "traits": ["demacia", "invoker"],
+      "stats": {
+        "health": [550, 990, 1782],
+        "mana": [0, 60],
+        "armor": 25,
+        "magic_resist": 25,
+        "attack_damage": [35, 63, 113],
+        "attack_speed": 0.75,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Hymn of Valor",
+        "description": "Sona heals allies and damages enemies with sound waves.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "viego",
+      "name": "Viego",
+      "cost": 1,
+      "traits": ["shadow_isles", "harvester"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 60],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Sovereign's Domination",
+        "description": "Viego possesses an enemy, gaining their stats.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "aphelios",
+      "name": "Aphelios",
+      "cost": 2,
+      "traits": ["targon", "longshot"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 40],
+        "armor": 20,
+        "magic_resist": 20,
+        "attack_damage": [20, 36, 65],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Moonlight Vigil",
+        "description": "Aphelios fires a concentrated blast at his target.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "ashe",
+      "name": "Ashe",
+      "cost": 2,
+      "traits": ["freljord", "longshot"],
+      "stats": {
+        "health": [550, 990, 1782],
+        "mana": [20, 80],
+        "armor": 20,
+        "magic_resist": 20,
+        "attack_damage": [53, 95, 172],
+        "attack_speed": 0.7,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Volley",
+        "description": "Ashe fires a volley of arrows in a cone.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "chogath",
+      "name": "Cho'Gath",
+      "cost": 2,
+      "traits": ["void", "bruiser"],
+      "stats": {
+        "health": [850, 1530, 2754],
+        "mana": [40, 100],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Rupture",
+        "description": "Cho'Gath ruptures the ground, knocking up enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "ekko",
+      "name": "Ekko",
+      "cost": 2,
+      "traits": ["zaun", "quickstriker"],
+      "stats": {
+        "health": [600, 1080, 1944],
+        "mana": [0, 50],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Timewinder",
+        "description": "Ekko throws a device that damages enemies and slows them.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "neeko",
+      "name": "Neeko",
+      "cost": 2,
+      "traits": ["ixtal", "huntress"],
+      "stats": {
+        "health": [600, 1080, 1944],
+        "mana": [0, 70],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [40, 72, 130],
+        "attack_speed": 0.75,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Blooming Burst",
+        "description": "Neeko throws a seed that blooms and damages enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "reksai",
+      "name": "Rek'Sai",
+      "cost": 2,
+      "traits": ["void", "bruiser"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 60],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Furious Bite",
+        "description": "Rek'Sai bites an enemy, dealing true damage based on missing HP.",
+        "damage_type": "true"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "sion",
+      "name": "Sion",
+      "cost": 2,
+      "traits": ["noxus", "defender"],
+      "stats": {
+        "health": [950, 1710, 3078],
+        "mana": [0, 80],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Decimating Smash",
+        "description": "Sion charges up a massive slam that knocks up enemies.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "teemo",
+      "name": "Teemo",
+      "cost": 2,
+      "traits": ["yordle", "quickstriker"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 60],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Noxious Trap",
+        "description": "Teemo plants mushrooms that poison enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "tristana",
+      "name": "Tristana",
+      "cost": 2,
+      "traits": ["yordle", "gunslinger"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [0, 70],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Explosive Charge",
+        "description": "Tristana plants a bomb on her target that explodes.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "twisted_fate",
+      "name": "Twisted Fate",
+      "cost": 2,
+      "traits": ["bilgewater", "arcanist"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 60],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [48, 86, 156],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Pick a Card",
+        "description": "Twisted Fate throws cards with different effects.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "vi",
+      "name": "Vi",
+      "cost": 2,
+      "traits": ["piltover", "zaun", "bruiser"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 60],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Vault Breaker",
+        "description": "Vi charges forward and punches her target, knocking them up.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "xin_zhao",
+      "name": "Xin Zhao",
+      "cost": 2,
+      "traits": ["demacia", "ionia", "vanquisher"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [0, 60],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Three Talon Strike",
+        "description": "Xin Zhao empowers his next attacks to deal bonus damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "yasuo",
+      "name": "Yasuo",
+      "cost": 2,
+      "traits": ["ionia", "slayer"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 50],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Steel Tempest",
+        "description": "Yasuo thrusts his blade, dealing damage and gaining stacks.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "ahri",
+      "name": "Ahri",
+      "cost": 3,
+      "traits": ["ionia", "arcanist"],
+      "stats": {
+        "health": [650, 1170, 2106],
+        "mana": [0, 30],
+        "armor": 25,
+        "magic_resist": 25,
+        "attack_damage": [30, 54, 97],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Spirit Rush",
+        "description": "Ahri dashes and throws orbs that damage enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "dr_mundo",
+      "name": "Dr. Mundo",
+      "cost": 3,
+      "traits": ["zaun", "juggernaut"],
+      "stats": {
+        "health": [950, 1710, 3078],
+        "mana": [0, 80],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Maximum Dosage",
+        "description": "Dr. Mundo regenerates health and gains attack damage.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "draven",
+      "name": "Draven",
+      "cost": 3,
+      "traits": ["noxus", "gunslinger"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 40],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Spinning Axes",
+        "description": "Draven's attacks deal bonus damage and drop gold.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "gangplank",
+      "name": "Gangplank",
+      "cost": 3,
+      "traits": ["bilgewater", "gunslinger"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [0, 70],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Powder Keg",
+        "description": "Gangplank places barrels that explode for massive damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "jinx",
+      "name": "Jinx",
+      "cost": 3,
+      "traits": ["zaun", "gunslinger"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 80],
+        "armor": 25,
+        "magic_resist": 25,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Super Mega Death Rocket",
+        "description": "Jinx fires a rocket that deals AoE damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "leona",
+      "name": "Leona",
+      "cost": 3,
+      "traits": ["targon", "defender"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [40, 120],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.65,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Solar Barrier",
+        "description": "Leona shields herself and nearby allies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "loris",
+      "name": "Loris",
+      "cost": 3,
+      "traits": ["ixtal", "vanquisher"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 50],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Jungle Fury",
+        "description": "Loris empowers his attacks with elemental damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "malzahar",
+      "name": "Malzahar",
+      "cost": 3,
+      "traits": ["void", "arcanist"],
+      "stats": {
+        "health": [750, 1350, 2430],
+        "mana": [0, 80],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Nether Grasp",
+        "description": "Malzahar suppresses an enemy, dealing damage over time.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "milio",
+      "name": "Milio",
+      "cost": 3,
+      "traits": ["ixtal", "invoker"],
+      "stats": {
+        "health": [600, 1080, 1944],
+        "mana": [0, 70],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [35, 63, 113],
+        "attack_speed": 0.75,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Cozy Campfire",
+        "description": "Milio creates a healing zone for allies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "nautilus",
+      "name": "Nautilus",
+      "cost": 3,
+      "traits": ["bilgewater", "warden"],
+      "stats": {
+        "health": [900, 1620, 2916],
+        "mana": [0, 80],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.65,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Depth Charge",
+        "description": "Nautilus sends a shockwave that stuns enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "sejuani",
+      "name": "Sejuani",
+      "cost": 3,
+      "traits": ["freljord", "bruiser"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [0, 80],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Glacial Prison",
+        "description": "Sejuani freezes enemies in a large area.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "vayne",
+      "name": "Vayne",
+      "cost": 3,
+      "traits": ["demacia", "longshot"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 50],
+        "armor": 35,
+        "magic_resist": 35,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.8,
+        "attack_range": 2
+      },
+      "ability": {
+        "name": "Silver Bolts",
+        "description": "Vayne's third attack deals bonus true damage.",
+        "damage_type": "true"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "zoe",
+      "name": "Zoe",
+      "cost": 3,
+      "traits": ["ionia", "disruptor"],
+      "stats": {
+        "health": [700, 1260, 2268],
+        "mana": [0, 60],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [45, 81, 146],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Paddle Star",
+        "description": "Zoe fires a star that deals increasing damage with distance.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "ambessa",
+      "name": "Ambessa",
+      "cost": 4,
+      "traits": ["noxus", "bruiser"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [0, 20],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.9,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Fervor",
+        "description": "Ambessa dashes and strikes enemies with her blades.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "belveth",
+      "name": "Bel'Veth",
+      "cost": 4,
+      "traits": ["void", "riftscourge"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [0, 100],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.85,
+        "attack_range": 2
+      },
+      "ability": {
+        "name": "Royal Maelstrom",
+        "description": "Bel'Veth slashes around her, dealing damage and gaining attack speed.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "braum",
+      "name": "Braum",
+      "cost": 4,
+      "traits": ["freljord", "warden"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [60, 120],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.6,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Unbreakable",
+        "description": "Braum raises his shield, blocking all projectiles.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "garen",
+      "name": "Garen",
+      "cost": 4,
+      "traits": ["demacia", "defender"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 100],
+        "armor": 70,
+        "magic_resist": 70,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Demacian Justice",
+        "description": "Garen spins and then executes low HP enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "lissandra",
+      "name": "Lissandra",
+      "cost": 4,
+      "traits": ["freljord", "arcanist"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [0, 80],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.75,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Frozen Tomb",
+        "description": "Lissandra freezes enemies and creates an icy zone.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "lux",
+      "name": "Lux",
+      "cost": 4,
+      "traits": ["demacia", "arcanist"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [0, 80],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 5
+      },
+      "ability": {
+        "name": "Final Spark",
+        "description": "Lux fires a laser that damages all enemies in a line.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "miss_fortune",
+      "name": "Miss Fortune",
+      "cost": 4,
+      "traits": ["bilgewater", "gunslinger"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [0, 70],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Bullet Time",
+        "description": "Miss Fortune channels and fires waves of bullets.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "nasus",
+      "name": "Nasus",
+      "cost": 4,
+      "traits": ["shurima", "juggernaut"],
+      "stats": {
+        "health": [1300, 2340, 4212],
+        "mana": [0, 80],
+        "armor": 70,
+        "magic_resist": 70,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Fury of the Sands",
+        "description": "Nasus grows in size, gaining health and damaging nearby enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "renekton",
+      "name": "Renekton",
+      "cost": 4,
+      "traits": ["shurima", "slayer"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 80],
+        "armor": 65,
+        "magic_resist": 65,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Cull the Meek",
+        "description": "Renekton slashes around him, healing for damage dealt.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "seraphine",
+      "name": "Seraphine",
+      "cost": 4,
+      "traits": ["piltover", "invoker"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 100],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Encore",
+        "description": "Seraphine charms enemies and heals allies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "swain",
+      "name": "Swain",
+      "cost": 4,
+      "traits": ["noxus", "arcanist"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 100],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Demonflare",
+        "description": "Swain transforms and drains health from enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "taric",
+      "name": "Taric",
+      "cost": 4,
+      "traits": ["targon", "defender"],
+      "stats": {
+        "health": [850, 1530, 2754],
+        "mana": [0, 70],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Cosmic Radiance",
+        "description": "Taric makes nearby allies invulnerable.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "warwick",
+      "name": "Warwick",
+      "cost": 4,
+      "traits": ["zaun", "slayer"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 80],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Infinite Duress",
+        "description": "Warwick leaps to and suppresses an enemy.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "wukong",
+      "name": "Wukong",
+      "cost": 4,
+      "traits": ["ionia", "bruiser"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [0, 80],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Cyclone",
+        "description": "Wukong spins, knocking up and damaging enemies.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "yone",
+      "name": "Yone",
+      "cost": 4,
+      "traits": ["ionia", "slayer"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 80],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.85,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Soul Unbound",
+        "description": "Yone dashes through enemies, dealing damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "yunara",
+      "name": "Yunara",
+      "cost": 4,
+      "traits": ["ixtal", "disruptor"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [0, 80],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Elemental Storm",
+        "description": "Yunara summons elemental forces to damage enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "aatrox",
+      "name": "Aatrox",
+      "cost": 5,
+      "traits": ["darkin", "world_ender"],
+      "stats": {
+        "health": [900, 1620, 2916],
+        "mana": [0, 30],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.9,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "World Ender",
+        "description": "Aatrox transforms, gaining massive omnivamp and damage.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "annie",
+      "name": "Annie",
+      "cost": 5,
+      "traits": ["noxus", "dark_child"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [0, 170],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [30, 54, 97],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Summon: Tibbers",
+        "description": "Annie summons Tibbers to fight alongside her.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "azir",
+      "name": "Azir",
+      "cost": 5,
+      "traits": ["shurima", "emperor"],
+      "stats": {
+        "health": [800, 1440, 2592],
+        "mana": [20, 40],
+        "armor": 30,
+        "magic_resist": 30,
+        "attack_damage": [35, 63, 113],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Emperor's Divide",
+        "description": "Azir summons soldiers that attack with him.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "fiddlesticks",
+      "name": "Fiddlesticks",
+      "cost": 5,
+      "traits": ["shadow_isles", "arcanist"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [0, 80],
+        "armor": 40,
+        "magic_resist": 40,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.75,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Crowstorm",
+        "description": "Fiddlesticks channels and then blinks to deal massive AoE damage.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "kindred",
+      "name": "Kindred",
+      "cost": 5,
+      "traits": ["shadow_isles", "quickstriker"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [0, 100],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.8,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Lamb's Respite",
+        "description": "Kindred creates a zone where units cannot die.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "lucian_senna",
+      "name": "Lucian & Senna",
+      "cost": 5,
+      "traits": ["demacia", "soulbound"],
+      "stats": {
+        "health": [1000, 1800, 3240],
+        "mana": [0, 100],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.8,
+        "attack_range": 5
+      },
+      "ability": {
+        "name": "Soulbound",
+        "description": "Lucian and Senna swap places, with different effects.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "mel",
+      "name": "Mel",
+      "cost": 5,
+      "traits": ["noxus", "invoker"],
+      "stats": {
+        "health": [850, 1530, 2754],
+        "mana": [0, 80],
+        "armor": 45,
+        "magic_resist": 45,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 4
+      },
+      "ability": {
+        "name": "Medarda's Mandate",
+        "description": "Mel empowers allies with bonus damage and shields.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "ornn",
+      "name": "Ornn",
+      "cost": 5,
+      "traits": ["freljord", "blacksmith"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 100],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.7,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Forge God",
+        "description": "Ornn forges artifact items and slams enemies.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "sett",
+      "name": "Sett",
+      "cost": 5,
+      "traits": ["ionia", "bruiser"],
+      "stats": {
+        "health": [1300, 2340, 4212],
+        "mana": [0, 100],
+        "armor": 65,
+        "magic_resist": 65,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "The Showstopper",
+        "description": "Sett grabs and slams the highest HP enemy.",
+        "damage_type": "physical"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "shyvana",
+      "name": "Shyvana",
+      "cost": 5,
+      "traits": ["demacia", "dragonborn"],
+      "stats": {
+        "health": [1200, 2160, 3888],
+        "mana": [0, 100],
+        "armor": 60,
+        "magic_resist": 60,
+        "attack_damage": [65, 117, 211],
+        "attack_speed": 0.8,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Dragon's Descent",
+        "description": "Shyvana transforms into a dragon and breathes fire.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "tahm_kench",
+      "name": "Tahm Kench",
+      "cost": 5,
+      "traits": ["bilgewater", "glutton"],
+      "stats": {
+        "health": [1400, 2520, 4536],
+        "mana": [0, 100],
+        "armor": 70,
+        "magic_resist": 70,
+        "attack_damage": [60, 108, 194],
+        "attack_speed": 0.65,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Devour",
+        "description": "Tahm Kench devours an enemy, dealing damage based on stats fed.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "volibear",
+      "name": "Volibear",
+      "cost": 5,
+      "traits": ["freljord", "juggernaut"],
+      "stats": {
+        "health": [1400, 2520, 4536],
+        "mana": [0, 80],
+        "armor": 65,
+        "magic_resist": 65,
+        "attack_damage": [70, 126, 227],
+        "attack_speed": 0.75,
+        "attack_range": 1
+      },
+      "ability": {
+        "name": "Stormbringer",
+        "description": "Volibear empowers himself with lightning and slams down.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "xerath",
+      "name": "Xerath",
+      "cost": 5,
+      "traits": ["shurima", "arcanist"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [0, 80],
+        "armor": 50,
+        "magic_resist": 50,
+        "attack_damage": [55, 99, 178],
+        "attack_speed": 0.75,
+        "attack_range": 5
+      },
+      "ability": {
+        "name": "Rite of the Arcane",
+        "description": "Xerath fires multiple barrages of arcane energy.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    },
+    {
+      "id": "zilean",
+      "name": "Zilean",
+      "cost": 5,
+      "traits": ["targon", "chronokeeper"],
+      "stats": {
+        "health": [1100, 1980, 3564],
+        "mana": [0, 100],
+        "armor": 55,
+        "magic_resist": 55,
+        "attack_damage": [50, 90, 162],
+        "attack_speed": 0.7,
+        "attack_range": 3
+      },
+      "ability": {
+        "name": "Chronoshift",
+        "description": "Zilean marks an ally to resurrect upon death.",
+        "damage_type": "magic"
+      },
+      "is_unlockable": false
+    }
+  ]
+}

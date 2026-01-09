@@ -1,0 +1,667 @@
+{
+  "set": 16,
+  "name": "Lore & Legends",
+  "player": {
+    "starting_health": 100,
+    "starting_gold": 0,
+    "starting_level": 1
+  },
+  "stages": {
+    "1": {
+      "name": "Stage 1",
+      "rounds": 4,
+      "description": "Opening stage with carousel and PvE minions",
+      "rounds_detail": {
+        "1-1": {
+          "type": "carousel",
+          "description": "Opening Carousel",
+          "passive_gold": 0,
+          "passive_xp": 0,
+          "special_events": ["carousel"],
+          "carousel_config": {
+            "champion_max_cost": 1,
+            "item_type": "component",
+            "pick_order": "simultaneous",
+            "spatula_chance": 0.15
+          }
+        },
+        "1-2": {
+          "type": "pve",
+          "description": "First PvE Round",
+          "passive_gold": 2,
+          "passive_xp": 2,
+          "monster_type": "minions",
+          "monster_count": 3,
+          "loot_chance": {
+            "gold": 0.5,
+            "component": 0.3
+          }
+        },
+        "1-3": {
+          "type": "pve",
+          "description": "Second PvE Round",
+          "passive_gold": 2,
+          "passive_xp": 2,
+          "monster_type": "minions",
+          "monster_count": 3,
+          "loot_chance": {
+            "gold": 0.5,
+            "component": 0.3
+          }
+        },
+        "1-4": {
+          "type": "pve",
+          "description": "Final Stage 1 PvE",
+          "passive_gold": 3,
+          "passive_xp": 2,
+          "monster_type": "minions",
+          "monster_count": 4,
+          "loot_chance": {
+            "gold": 0.6,
+            "component": 0.35
+          }
+        }
+      }
+    },
+    "2": {
+      "name": "Stage 2",
+      "rounds": 7,
+      "description": "First augment, early PvP, carousel, and Krugs",
+      "rounds_detail": {
+        "2-1": {
+          "type": "pvp",
+          "description": "First Augment Selection",
+          "passive_gold": 4,
+          "passive_xp": 2,
+          "special_events": ["augment"],
+          "augment_config": {
+            "augment_number": 1,
+            "timer_seconds": 43,
+            "tier_distribution": {
+              "silver": 0.70,
+              "gold": 0.25,
+              "prismatic": 0.05
+            }
+          },
+          "recommended_level": 4
+        },
+        "2-2": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "2-3": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "2-4": {
+          "type": "carousel",
+          "description": "Mid-Stage Carousel",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["carousel"],
+          "carousel_config": {
+            "champion_max_cost": 2,
+            "item_type": "component",
+            "pick_order": "health_based",
+            "spatula_chance": 0.15
+          }
+        },
+        "2-5": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "recommended_level": 5
+        },
+        "2-6": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "2-7": {
+          "type": "pve",
+          "description": "Krugs (Monster Round)",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "monster_type": "krugs",
+          "monster_count": 6,
+          "loot_chance": {
+            "gold": 0.8,
+            "component": 0.5,
+            "full_item": 0.1
+          }
+        }
+      }
+    },
+    "3": {
+      "name": "Stage 3",
+      "rounds": 7,
+      "description": "Second augment, mid-game PvP, and Wolves",
+      "rounds_detail": {
+        "3-1": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "3-2": {
+          "type": "pvp",
+          "description": "Second Augment Selection",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["augment"],
+          "augment_config": {
+            "augment_number": 2,
+            "timer_seconds": 58,
+            "tier_distribution": {
+              "silver": 0.25,
+              "gold": 0.55,
+              "prismatic": 0.20
+            }
+          },
+          "recommended_level": 6
+        },
+        "3-3": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "3-4": {
+          "type": "carousel",
+          "description": "Mid-Stage Carousel",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["carousel"],
+          "carousel_config": {
+            "champion_max_cost": 3,
+            "item_type": "component",
+            "pick_order": "health_based",
+            "spatula_chance": 0.15
+          }
+        },
+        "3-5": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "3-6": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "3-7": {
+          "type": "pve",
+          "description": "Wolves (Monster Round)",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "monster_type": "wolves",
+          "monster_count": 5,
+          "loot_chance": {
+            "gold": 0.85,
+            "component": 0.55,
+            "full_item": 0.15
+          }
+        }
+      }
+    },
+    "4": {
+      "name": "Stage 4",
+      "rounds": 7,
+      "description": "Third augment, late-game PvP, and Raptors",
+      "rounds_detail": {
+        "4-1": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "recommended_level": 7
+        },
+        "4-2": {
+          "type": "pvp",
+          "description": "Third Augment Selection",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["augment"],
+          "augment_config": {
+            "augment_number": 3,
+            "timer_seconds": 58,
+            "tier_distribution": {
+              "silver": 0.10,
+              "gold": 0.40,
+              "prismatic": 0.50
+            }
+          },
+          "recommended_level": 8
+        },
+        "4-3": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "4-4": {
+          "type": "carousel",
+          "description": "Mid-Stage Carousel",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["carousel"],
+          "carousel_config": {
+            "champion_max_cost": 3,
+            "item_type": "component",
+            "pick_order": "health_based",
+            "spatula_chance": 0.15
+          }
+        },
+        "4-5": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "4-6": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "4-7": {
+          "type": "pve",
+          "description": "Raptors (Monster Round)",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "monster_type": "raptors",
+          "monster_count": 7,
+          "loot_chance": {
+            "gold": 0.9,
+            "component": 0.6,
+            "full_item": 0.2
+          }
+        }
+      }
+    },
+    "5": {
+      "name": "Stage 5",
+      "rounds": 7,
+      "description": "End-game with Rift Herald",
+      "rounds_detail": {
+        "5-1": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "recommended_level": 8
+        },
+        "5-2": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "recommended_level": 9
+        },
+        "5-3": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "5-4": {
+          "type": "carousel",
+          "description": "Late-Game Carousel",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["carousel"],
+          "carousel_config": {
+            "champion_max_cost": 4,
+            "item_type": "combined",
+            "pick_order": "health_based",
+            "spatula_chance": 0.0
+          }
+        },
+        "5-5": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "5-6": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "5-7": {
+          "type": "pve",
+          "description": "Rift Herald (Monster Round)",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "monster_type": "rift_herald",
+          "monster_count": 1,
+          "loot_chance": {
+            "gold": 1.0,
+            "component": 0.7,
+            "full_item": 0.3,
+            "radiant": 0.1
+          }
+        }
+      }
+    },
+    "6": {
+      "name": "Stage 6",
+      "rounds": 7,
+      "description": "Ultra late-game with Elder Dragon",
+      "rounds_detail": {
+        "6-1": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "recommended_level": 9
+        },
+        "6-2": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "6-3": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "6-4": {
+          "type": "carousel",
+          "description": "Ultra Late Carousel",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["carousel"],
+          "carousel_config": {
+            "champion_max_cost": 5,
+            "item_type": "mixed",
+            "pick_order": "health_based",
+            "spatula_chance": 0.0
+          }
+        },
+        "6-5": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "6-6": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "6-7": {
+          "type": "pve",
+          "description": "Elder Dragon (Monster Round)",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "monster_type": "elder_dragon",
+          "monster_count": 1,
+          "loot_chance": {
+            "gold": 1.0,
+            "component": 0.8,
+            "full_item": 0.5,
+            "radiant": 0.25
+          }
+        }
+      }
+    },
+    "7": {
+      "name": "Stage 7",
+      "rounds": 7,
+      "description": "Final stage with Baron Nashor",
+      "rounds_detail": {
+        "7-1": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "recommended_level": 10
+        },
+        "7-2": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "7-3": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "7-4": {
+          "type": "carousel",
+          "description": "Final Carousel",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "special_events": ["carousel"],
+          "carousel_config": {
+            "champion_max_cost": 5,
+            "item_type": "combined",
+            "pick_order": "health_based",
+            "spatula_chance": 0.0
+          }
+        },
+        "7-5": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "7-6": {
+          "type": "pvp",
+          "description": "Standard PvP Round",
+          "passive_gold": 5,
+          "passive_xp": 2
+        },
+        "7-7": {
+          "type": "pve",
+          "description": "Baron Nashor (Final Monster)",
+          "passive_gold": 5,
+          "passive_xp": 2,
+          "monster_type": "baron_nashor",
+          "monster_count": 1,
+          "loot_chance": {
+            "gold": 1.0,
+            "component": 1.0,
+            "full_item": 0.7,
+            "radiant": 0.4,
+            "artifact": 0.1
+          }
+        }
+      }
+    }
+  },
+  "monsters": {
+    "minions": {
+      "name": "Minions",
+      "base_health": 200,
+      "base_damage": 20,
+      "difficulty": 1
+    },
+    "krugs": {
+      "name": "Krugs",
+      "base_health": 600,
+      "base_damage": 40,
+      "difficulty": 2,
+      "special": "Splits into smaller krugs when killed"
+    },
+    "wolves": {
+      "name": "Wolves",
+      "base_health": 800,
+      "base_damage": 60,
+      "difficulty": 3,
+      "special": "Pack bonus damage when multiple alive"
+    },
+    "raptors": {
+      "name": "Raptors",
+      "base_health": 400,
+      "base_damage": 80,
+      "difficulty": 4,
+      "special": "Fast attacks, multiple targets"
+    },
+    "rift_herald": {
+      "name": "Rift Herald",
+      "base_health": 3000,
+      "base_damage": 150,
+      "difficulty": 5,
+      "special": "High health single target"
+    },
+    "elder_dragon": {
+      "name": "Elder Dragon",
+      "base_health": 5000,
+      "base_damage": 200,
+      "difficulty": 6,
+      "special": "Burns enemies, high damage"
+    },
+    "baron_nashor": {
+      "name": "Baron Nashor",
+      "base_health": 8000,
+      "base_damage": 250,
+      "difficulty": 7,
+      "special": "AoE attacks, knockup"
+    }
+  },
+  "economy": {
+    "starting_gold": 0,
+    "base_income": 5,
+    "interest_rate": 0.1,
+    "max_interest": 5,
+    "reroll_cost": 2,
+    "xp_purchase_cost": 4,
+    "xp_per_purchase": 4,
+    "pvp_win_bonus": 1,
+    "streak_bonus": {
+      "description": "Bonus gold for consecutive wins or losses",
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "6": 3
+    },
+    "sources": [
+      "https://lolchess.gg/guide/exp",
+      "https://blitz.gg/tft/guides/gold"
+    ]
+  },
+  "leveling": {
+    "passive_xp_per_round": 2,
+    "xp_to_level": {
+      "2": 2,
+      "3": 2,
+      "4": 6,
+      "5": 10,
+      "6": 20,
+      "7": 36,
+      "8": 60,
+      "9": 68,
+      "10": 68
+    },
+    "team_size_by_level": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10
+    },
+    "recommended_timings": {
+      "level_4": "2-1",
+      "level_5": "2-5",
+      "level_6": "3-2",
+      "level_7": "4-1",
+      "level_8": "4-2",
+      "level_9": "5-2"
+    }
+  },
+  "shop_odds": {
+    "1": [100, 0, 0, 0, 0],
+    "2": [100, 0, 0, 0, 0],
+    "3": [75, 25, 0, 0, 0],
+    "4": [55, 30, 15, 0, 0],
+    "5": [45, 33, 20, 2, 0],
+    "6": [30, 40, 25, 5, 0],
+    "7": [19, 35, 32, 13, 1],
+    "8": [18, 28, 32, 20, 2],
+    "9": [10, 20, 25, 35, 10],
+    "10": [5, 10, 20, 40, 25]
+  },
+  "champion_pool_sizes": {
+    "1": 22,
+    "2": 20,
+    "3": 17,
+    "4": 10,
+    "5": 9
+  },
+  "combat": {
+    "description": "Player damage = Base Stage Damage + Sum of surviving unit damages",
+    "sources": [
+      "https://lolchess.gg/guide/damage",
+      "https://buffnerfrepeat.com/guides/how-player-damage-is-calculated-in-teamfight-tactics-tft"
+    ],
+    "base_stage_damage": {
+      "description": "Base damage taken when losing, regardless of surviving units",
+      "1": 0,
+      "2": 2,
+      "3": 6,
+      "4": 7,
+      "5": 10,
+      "6": 12,
+      "7": 17,
+      "8": 150
+    },
+    "unit_damage_by_tier_and_star": {
+      "description": "Damage per surviving enemy unit based on cost tier and star level",
+      "1_star": {
+        "1_cost": 1,
+        "2_cost": 2,
+        "3_cost": 2,
+        "4_cost": 3,
+        "5_cost": 4
+      },
+      "2_star": {
+        "1_cost": 2,
+        "2_cost": 3,
+        "3_cost": 4,
+        "4_cost": 5,
+        "5_cost": 6
+      },
+      "3_star": {
+        "1_cost": 4,
+        "2_cost": 5,
+        "3_cost": 6,
+        "4_cost": 7,
+        "5_cost": 8
+      }
+    },
+    "examples": [
+      {
+        "scenario": "Stage 6, enemy has 2x 2-star 3-cost champions remaining",
+        "calculation": "12 + (4 + 4) = 20 damage",
+        "breakdown": "Base(12) + 2-star 3-cost(4) + 2-star 3-cost(4)"
+      },
+      {
+        "scenario": "Stage 4, enemy has 1x 1-star 5-cost remaining",
+        "calculation": "7 + 4 = 11 damage",
+        "breakdown": "Base(7) + 1-star 5-cost(4)"
+      }
+    ]
+  }
+}

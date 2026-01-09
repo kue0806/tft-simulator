@@ -48,8 +48,7 @@ logs/
 wandb/
 runs/
 
-# Data
-data/
+# Data files (not src/data/)
 *.csv
 *.json.gz
 

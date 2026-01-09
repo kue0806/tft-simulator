@@ -1,0 +1,68 @@
+{
+  "set": 16,
+  "components": [
+    {
+      "id": "bf_sword",
+      "name": "B.F. Sword",
+      "type": "component",
+      "stats": {"ad": 10},
+      "effect": null
+    },
+    {
+      "id": "recurve_bow",
+      "name": "Recurve Bow",
+      "type": "component",
+      "stats": {"attack_speed": 10},
+      "effect": null
+    },
+    {
+      "id": "needlessly_large_rod",
+      "name": "Needlessly Large Rod",
+      "type": "component",
+      "stats": {"ap": 10},
+      "effect": null
+    },
+    {
+      "id": "tear_of_the_goddess",
+      "name": "Tear of the Goddess",
+      "type": "component",
+      "stats": {"mana": 15},
+      "effect": null
+    },
+    {
+      "id": "chain_vest",
+      "name": "Chain Vest",
+      "type": "component",
+      "stats": {"armor": 20},
+      "effect": null
+    },
+    {
+      "id": "negatron_cloak",
+      "name": "Negatron Cloak",
+      "type": "component",
+      "stats": {"mr": 20},
+      "effect": null
+    },
+    {
+      "id": "giants_belt",
+      "name": "Giant's Belt",
+      "type": "component",
+      "stats": {"health": 150},
+      "effect": null
+    },
+    {
+      "id": "sparring_gloves",
+      "name": "Sparring Gloves",
+      "type": "component",
+      "stats": {"crit_chance": 10, "dodge": 10},
+      "effect": null
+    },
+    {
+      "id": "spatula",
+      "name": "Spatula",
+      "type": "component",
+      "stats": {},
+      "effect": "Used to create Emblems"
+    }
+  ]
+}
