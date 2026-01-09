@@ -208,7 +208,7 @@ class TFTEnv(gym.Env):
 
             return obs, reward, False, False, info
 
-        action_valid = self._execute_action(player, action_type, params)
+        action_valid, action_info = self._execute_action(player, action_type, params)
 
         self._action_count += 1
 
@@ -237,6 +237,7 @@ class TFTEnv(gym.Env):
             round_result=round_result,
             done=self.done,
             placement=placement,
+            action_info=action_info,
         )
 
         # Get observation and info
@@ -250,36 +251,44 @@ class TFTEnv(gym.Env):
 
     def _execute_action(
         self, player: PlayerState, action_type: ActionType, params: Any
-    ) -> bool:
-        """Execute action."""
+    ) -> Tuple[bool, Optional[Dict[str, Any]]]:
+        """Execute action.
+
+        Returns:
+            Tuple of (success, action_info dict with details about the action)
+        """
         c = self.action_space_handler.config
         player_id = getattr(player, "player_id", 0)
         shop = self.shops.get(player_id)
 
         if action_type == ActionType.PASS:
-            return True
+            return True, {"action": "pass"}
 
         elif action_type == ActionType.BUY:
             slot_idx = params
             if shop and 0 <= slot_idx < c.shop_size:
-                return self._execute_buy(shop, slot_idx, player)
-            return False
+                success, info = self._execute_buy(shop, slot_idx, player)
+                return success, info
+            return False, None
 
         elif action_type == ActionType.SELL_BENCH:
             bench_idx = params
             if 0 <= bench_idx < c.bench_size:
-                return self._execute_sell_bench(player, bench_idx)
-            return False
+                success = self._execute_sell_bench(player, bench_idx)
+                return success, {"action": "sell_bench", "success": success}
+            return False, None
 
         elif action_type == ActionType.SELL_BOARD:
             board_pos = params
             pos = self.action_space_handler.idx_to_pos(board_pos)
-            return self._execute_sell_board(player, pos)
+            success = self._execute_sell_board(player, pos)
+            return success, {"action": "sell_board", "success": success}
 
         elif action_type == ActionType.PLACE:
             bench_idx, board_pos = params
             pos = self.action_space_handler.idx_to_pos(board_pos)
-            return self._execute_place(player, bench_idx, pos)
+            success = self._execute_place(player, bench_idx, pos)
+            return success, {"action": "place", "success": success}
 
         elif action_type == ActionType.REFRESH:
             gold = getattr(player, "gold", 0)
@@ -290,8 +299,8 @@ class TFTEnv(gym.Env):
                 player_id = getattr(player, "player_id", 0)
                 if self.unlock_manager:
                     self.unlock_manager.record_reroll(player_id)
-                return True
-            return False
+                return True, {"action": "refresh", "success": True}
+            return False, None
 
         elif action_type == ActionType.BUY_XP:
             gold = getattr(player, "gold", 0)
@@ -304,44 +313,48 @@ class TFTEnv(gym.Env):
                     player.xp = getattr(player, "xp", 0) + 4
                 if shop:
                     shop.player_level = getattr(player, "level", 1)
-                return True
-            return False
+                return True, {"action": "buy_xp", "success": True}
+            return False, None
 
-        return False
+        return False, None
 
-    def _execute_buy(self, shop: Shop, slot_idx: int, player: PlayerState) -> bool:
-        """Execute buy action."""
+    def _execute_buy(self, shop: Shop, slot_idx: int, player: PlayerState) -> Tuple[bool, Optional[Dict[str, Any]]]:
+        """Execute buy action.
+
+        Returns:
+            Tuple of (success, action_info with unit_cost for reward calculation)
+        """
         slots = getattr(shop, "slots", [])
         if slot_idx >= len(slots):
-            return False
+            return False, None
 
         slot = slots[slot_idx]
         if slot is None:
-            return False
+            return False, None
 
         is_purchased = getattr(slot, "is_purchased", False)
         if is_purchased:
-            return False
+            return False, None
 
         champion = getattr(slot, "champion", slot)
         if champion is None:
-            return False
+            return False, None
 
         cost = getattr(champion, "cost", 999)
         gold = getattr(player, "gold", 0)
 
         if gold < cost:
-            return False
+            return False, None
 
         # Check bench space
         units = getattr(player, "units", None)
         if units is None:
-            return False
+            return False, None
 
         bench = getattr(units, "bench", [])
         bench_space = sum(1 for b in bench if b is None)
         if bench_space <= 0:
-            return False
+            return False, None
 
         # Purchase through shop (Shop.purchase only takes slot_idx)
         if hasattr(shop, "purchase"):
@@ -351,17 +364,18 @@ class TFTEnv(gym.Env):
                 # Add to bench
                 if hasattr(units, "add_to_bench"):
                     units.add_to_bench(purchased)
-                return True
-            return False
+                return True, {"action": "buy", "success": True, "unit_cost": cost}
+            return False, None
 
         # Manual purchase (fallback)
         player.gold = gold - cost
 
         # Add to bench
         if hasattr(units, "add_to_bench"):
-            return units.add_to_bench(champion)
+            success = units.add_to_bench(champion)
+            return success, {"action": "buy", "success": success, "unit_cost": cost}
 
-        return True
+        return True, {"action": "buy", "success": True, "unit_cost": cost}
 
     def _execute_sell_bench(self, player: PlayerState, bench_idx: int) -> bool:
         """Execute sell bench action."""
