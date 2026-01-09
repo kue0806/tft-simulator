@@ -46,6 +46,10 @@ class EncoderConfig:
     opponent_unit_dim: int = 8  # Compact encoding per unit (legacy)
     opponent_summary_dim: int = 15  # Summary encoding per opponent (much smaller!)
 
+    # Champion contest encoding (track how many of each champion opponents have)
+    encode_champion_contest: bool = True  # Track opponent champion counts
+    champion_contest_dim: int = 60  # Top N champions to track (reduced from num_champions)
+
     # Augment encoding
     num_augment_choices: int = 3
     augment_embed_dim: int = 20  # Per-augment embedding dimension
@@ -105,6 +109,10 @@ class StateEncoder:
             # New: compact summary per opponent (7 * 15 = 105 dims vs 2,072!)
             opponent_units_dim = (c.max_players - 1) * c.opponent_summary_dim
 
+        # Champion contest encoding (how many of each champion opponents have)
+        # This helps the agent understand which champions are contested
+        champion_contest_dim = c.champion_contest_dim if c.encode_champion_contest else 0
+
         # Augment choices encoding (3 choices × 20 dims = 60 dims)
         # + 1 flag for "is augment selection phase"
         augment_dim = c.num_augment_choices * c.augment_embed_dim + 1
@@ -118,6 +126,7 @@ class StateEncoder:
             + stage_dim
             + other_players_dim
             + opponent_units_dim
+            + champion_contest_dim
             + augment_dim
         )
 
@@ -171,7 +180,11 @@ class StateEncoder:
             # Optimized: compact summary encoding
             parts.append(self._encode_opponent_summary(game, player_idx))
 
-        # 9. Augment choices (during augment selection phase)
+        # 9. Champion contest encoding (opponent champion counts)
+        if self.config.encode_champion_contest:
+            parts.append(self._encode_champion_contest(game, player_idx))
+
+        # 10. Augment choices (during augment selection phase)
         parts.append(self._encode_augment_choices(augment_choices))
 
         return np.concatenate(parts).astype(np.float32)
@@ -643,6 +656,71 @@ class StateEncoder:
     ):
         """Helper to update unit statistics (unused, inline version above)."""
         pass
+
+    def _encode_champion_contest(self, game: "GameState", my_idx: int) -> np.ndarray:
+        """
+        Encode how many of each champion all opponents have combined.
+
+        This helps the agent understand:
+        - Which champions are being contested (hard to 3-star)
+        - Which champions are open (easy to collect)
+        - Whether to pivot away from contested champions
+
+        Returns:
+            np.ndarray: Champion count vector (60 dims for top 60 champions by index)
+        """
+        c = self.config
+        result = np.zeros(c.champion_contest_dim, dtype=np.float32)
+
+        # Count champions across all opponents (board + bench)
+        champion_counts: Dict[str, int] = {}
+
+        players = getattr(game, "players", [])
+        for idx, player in enumerate(players):
+            if idx == my_idx:
+                continue
+
+            is_alive = getattr(player, "is_alive", True)
+            if not is_alive:
+                continue
+
+            units = getattr(player, "units", None)
+            if units is None:
+                continue
+
+            # Count board units
+            board_units = getattr(units, "board", {})
+            if isinstance(board_units, dict):
+                for instance in board_units.values():
+                    champion = getattr(instance, "champion", None)
+                    if champion:
+                        champ_id = getattr(champion, "id", "")
+                        star_level = getattr(instance, "star_level", 1)
+                        # Count copies (1-star=1, 2-star=3, 3-star=9)
+                        copies = 3 ** (star_level - 1)
+                        champion_counts[champ_id] = champion_counts.get(champ_id, 0) + copies
+
+            # Count bench units
+            bench_units = getattr(units, "bench", [])
+            for instance in bench_units:
+                if instance is None:
+                    continue
+                champion = getattr(instance, "champion", None)
+                if champion:
+                    champ_id = getattr(champion, "id", "")
+                    star_level = getattr(instance, "star_level", 1)
+                    copies = 3 ** (star_level - 1)
+                    champion_counts[champ_id] = champion_counts.get(champ_id, 0) + copies
+
+        # Encode counts using champion index mapping
+        for champ_id, count in champion_counts.items():
+            champ_idx = self._champion_to_idx.get(champ_id)
+            if champ_idx is not None and champ_idx < c.champion_contest_dim:
+                # Normalize: max pool is usually 29 for 1-cost, 13 for 5-cost
+                # Use 30 as max for normalization
+                result[champ_idx] = min(count / 30.0, 1.0)
+
+        return result
 
     def _encode_augment_choices(self, augment_choices: Optional[List]) -> np.ndarray:
         """
