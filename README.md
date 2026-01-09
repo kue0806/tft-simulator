@@ -1,24 +1,3 @@
-# TFT Simulator
-
-A complete game simulator and real-time decision optimization tool for Teamfight Tactics (TFT) Set 16 "Lore & Legends".
-
-## Project Structure
-
-```
-tft-simulator/
-├── src/
-│   ├── core/           # Core simulation modules
-│   ├── optimizer/      # Optimization engine
-│   ├── data/           # Data models and loaders
-│   └── api/            # API endpoints
-├── tests/              # Test suite
-├── data/
-│   ├── champions/      # Champion data
-│   ├── items/          # Item data
-│   └── traits/         # Trait data
-├── config/             # Configuration files
-└── docs/               # Documentation
-```
 
 ## Setup
 
